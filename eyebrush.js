@@ -5,6 +5,7 @@ eybrushItems = [
     name: "blend trend eyeshadow brush -043 - round xl",
     price: 399,
     rating: "4.8(6)",
+    idtype: "eyeshadow",
   },
   {
     image:
@@ -12,6 +13,7 @@ eybrushItems = [
     name: "blend trend eyeshadow brush -042 - round",
     price: 399,
     rating: "4.4(5)",
+    idtype: "eyeshadow",
   },
   {
     image:
@@ -26,6 +28,7 @@ eybrushItems = [
     name: "Blend Trend Eyeshadow Brush - 041 Flat",
     price: 399,
     rating: "5(3)",
+    idtype: "eyeshadow",
   },
   {
     image:
@@ -43,6 +46,7 @@ displayItemCards(eyebrushDataLS);
 function displayItemCards(eyebrushDataLS) {
   document.querySelector("#left > p+p > span").innerText =
     eyebrushDataLS.length + " " + "items";
+  document.querySelector("#cards_container").innerHTML = "";
   eyebrushDataLS.forEach(function (ele) {
     let card = document.createElement("div");
     let cardDiv = document.createElement("div");
@@ -65,8 +69,20 @@ function displayItemCards(eyebrushDataLS) {
     let btnDiv = document.createElement("div");
     let addCart = document.createElement("p");
     addCart.innerText = "Add to Cart";
+
+    // adding functionality to add to cart btn
+
+    addCart.addEventListener("click", function () {
+      addToCartFunc(ele);
+    });
+
     let addwish = document.createElement("img");
     addwish.src = "https://img.icons8.com/material-outlined/344/like--v1.png";
+
+    // adding functionality to wish cart btn
+    addwish.addEventListener("click", function () {
+      addTowishList(ele);
+    });
 
     btnDiv.append(addwish, addCart);
     ratDiv.append(ratingIcon, itemRating);
@@ -75,3 +91,60 @@ function displayItemCards(eyebrushDataLS) {
     document.querySelector("#cards_container").append(card);
   });
 }
+
+let cartItemsData = JSON.parse(localStorage.getItem("cartItems")) || [];
+function addToCartFunc(ele) {
+  cartItemsData.push(ele);
+  localStorage.setItem("cartItems", JSON.stringify(cartItemsData));
+}
+
+let wishItemsData = JSON.parse(localStorage.getItem("wishList")) || [];
+
+function addTowishList(ele) {
+  wishItemsData.push(ele);
+  localStorage.setItem("wishList", JSON.stringify(wishItemsData));
+}
+
+// filtering of the separate products using js DOM
+// *****************************************************
+
+// For check box apply
+
+document.querySelector(".btn_sec").addEventListener("click", function () {
+  let checkedValue = document.querySelector("input[type ='checkbox']:checked");
+  let filteredItem = eyebrushDataLS.filter(function (ele) {
+    return ele.idtype === checkedValue.value;
+  });
+  displayItemCards(filteredItem);
+});
+
+// For reset all check box
+document.querySelector("#rset").addEventListener("click", function () {
+  window.location.reload();
+});
+
+// For sorting price low to high
+
+document.querySelector("#lowTohigh").addEventListener("click", function () {
+  let sortedItems = eyebrushDataLS.sort(function (a, b) {
+    return a.price - b.price;
+  });
+
+  displayItemCards(sortedItems);
+});
+
+// For sorting price high to low
+
+document.querySelector("#highTolow").addEventListener("click", function () {
+  let sortedItems = eyebrushDataLS.sort(function (a, b) {
+    return b.price - a.price;
+  });
+
+  displayItemCards(sortedItems);
+});
+
+// For clear all sorting items
+
+document.querySelector("#clr").addEventListener("click", function () {
+  window.location.reload();
+});

@@ -9,16 +9,35 @@
     <link rel="stylesheet" href="style.css/brushStyle.css">
     <!-- Font awesome file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .filter_body {
+            width: 90%;
+            height: 210px;
+            margin: auto;
+            padding: 20px 10px;
+            color: #808080;
+            font-size: 13px;
+        }
+
+        .btn_sec {
+            width: 100%;
+            background: #000000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 14px;
+            padding: 7px 0px;
+            /* margin-top: 190px; */
+            cursor: pointer;
+        }
+    </style>
+
     <title>Face-brush</title>
 </head>
 
 <body>
-    <!-- <div id="top">
-        <div id="banner">
-            <img src="https://d32baadbbpueqt.cloudfront.net/Collection/39da2bc6-d83c-4350-a2b1-0c0ec7a721a8.jpg"
-                alt="brushes_banner">
-        </div>
-    </div> -->
 
     <!-- Middle bar containing filter and sort items and descreptions -->
 
@@ -53,20 +72,17 @@
                 <div class="popup_content big">
                     <div class="top_sec">
                         <p>Smart Filters</p>
-                        <p>Reset all</p>
+                        <p id="rset">Reset all</p>
                     </div>
                     <div class="filter_body">
                         <p>Product Type</p>
                         <div>
                             <input type="checkbox" name="
-Eyeshadow Brush" id="eyeBs"><span>Eyeshadow Brush</span><br>
+
+Face Brush" id="faceBs" value="face"><span>Face Brush</span><br>
                             <input type="checkbox" name="
 
-Face Brush" id="faceBs"><span>Face Brush</span><br><input type="checkbox" name="
-
-Foundation Brush" id="foundBs"><span>Foundation Brush</span><br><input type="checkbox" name="
-
-Brush Combo" id="comboBs"><span>Brush Combo</span>
+Foundation Brush" id="foundBs" value="foundation"><span>Foundation Brush</span><br>
                         </div>
                     </div>
                 </div>
@@ -86,7 +102,7 @@ Brush Combo" id="comboBs"><span>Brush Combo</span>
                 <div class="popup_content small">
                     <div class="top_sec">
                         <p>Select Sorting</p>
-                        <p>Clear all</p>
+                        <p id="clr">Clear all</p>
                     </div>
                     <div class="sort_body">
                         <p><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
@@ -95,17 +111,17 @@ Brush Combo" id="comboBs"><span>Brush Combo</span>
                             </svg>
                             <span>Select Sorting</span>
                         </p>
-                        <p>
+                        <p id="lowTohigh">
                             <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
                                 style="font-size: 18px;">
                                 <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path>
-                            </svg>Price - High to Low
+                            </svg>Price - Low to High
                         </p>
-                        <p>
+                        <p id="highTolow">
                             <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
                                 style="font-size: 18px;">
                                 <path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path>
-                            </svg>Price - Low to High
+                            </svg>Price - High to Low
                         </p>
                     </div>
                 </div>

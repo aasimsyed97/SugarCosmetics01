@@ -5,6 +5,7 @@ let brushesItems = [
     name: "blend trend eyeshadow brush -043 - round xl",
     price: 399,
     rating: "4.8(6)",
+    idtype: "eye",
   },
   {
     image:
@@ -12,6 +13,7 @@ let brushesItems = [
     name: "blend trend eyeshadow brush -042 - round",
     price: 399,
     rating: "4.4(5)",
+    idtype: "eye",
   },
   {
     image:
@@ -19,6 +21,7 @@ let brushesItems = [
     name: "Blend Trend Dual Eyeshadow Brush - 413 Flat + Round Xl",
     price: 599,
     rating: "5(2)",
+    idtype: "combo",
   },
   {
     image:
@@ -26,6 +29,7 @@ let brushesItems = [
     name: "Blend Trend Eyeshadow Brush - 041 Flat",
     price: 399,
     rating: "5(3)",
+    idtype: "eye",
   },
   {
     image:
@@ -33,6 +37,7 @@ let brushesItems = [
     name: "Blend Trend Dual Eyeshadow Brush - 412 Flat + Round",
     price: 599,
     rating: "5(2)",
+    idtype: "combo",
   },
   {
     image:
@@ -42,6 +47,7 @@ let brushesItems = [
 
     price: 399,
     rating: "4.5(13)",
+    idtype: "face",
   },
   {
     image:
@@ -51,33 +57,33 @@ let brushesItems = [
 
     price: 399,
     rating: " 4.7(23)",
+    idtype: "face",
   },
   {
     image:
       "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-052Kabuki.jpg?v=1627573664",
 
     name: "Blend Trend Foundation Brush - 052 kabuki",
-
     price: 399,
     rating: " 4.8(26)",
+    idtype: "foundation",
   },
   {
     image:
       "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
 
     name: "Blend Trend Foundation Brush - 001 blush",
-
     price: 399,
     rating: "4.9(15)",
+    idtype: "foundation",
   },
   {
     image:
       "https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
-
     name: "Blend Trend Foundation Brush - 007 powder",
-
     price: 399,
     rating: "4.9(24)",
+    idtype: "foundation",
   },
 ];
 localStorage.setItem("Brushes", JSON.stringify(brushesItems));
@@ -88,6 +94,7 @@ displayItemCards(brushDataLS);
 function displayItemCards(brushDataLS) {
   document.querySelector("#left > p+p > span").innerText =
     brushesItems.length + " " + "items";
+  document.querySelector("#cards_container").innerHTML = "";
   brushDataLS.forEach(function (ele) {
     let card = document.createElement("div");
     let cardDiv = document.createElement("div");
@@ -110,8 +117,21 @@ function displayItemCards(brushDataLS) {
     let btnDiv = document.createElement("div");
     let addCart = document.createElement("p");
     addCart.innerText = "Add to Cart";
+    addCart.class = "cart";
+
+    // adding functionality to add to cart btn
+
+    addCart.addEventListener("click", function () {
+      addToCartFunc(ele);
+    });
+
     let addwish = document.createElement("img");
     addwish.src = "https://img.icons8.com/material-outlined/344/like--v1.png";
+
+    // adding functionality to wish cart btn
+    addwish.addEventListener("click", function () {
+      addTowishList(ele);
+    });
 
     btnDiv.append(addwish, addCart);
     ratDiv.append(ratingIcon, itemRating);
@@ -120,3 +140,60 @@ function displayItemCards(brushDataLS) {
     document.querySelector("#cards_container").append(card);
   });
 }
+
+let cartItemsData = JSON.parse(localStorage.getItem("cartItems")) || [];
+function addToCartFunc(ele) {
+  cartItemsData.push(ele);
+  localStorage.setItem("cartItems", JSON.stringify(cartItemsData));
+}
+
+let wishItemsData = JSON.parse(localStorage.getItem("wishList")) || [];
+
+function addTowishList(ele) {
+  wishItemsData.push(ele);
+  localStorage.setItem("wishList", JSON.stringify(wishItemsData));
+}
+
+// filtering of the separate products using js DOM
+// *****************************************************
+
+// For check box apply
+
+document.querySelector(".btn_sec").addEventListener("click", function () {
+  let checkedValue = document.querySelector("input[type ='checkbox']:checked");
+  let filteredItem = brushDataLS.filter(function (ele) {
+    return ele.idtype === checkedValue.value;
+  });
+  displayItemCards(filteredItem);
+});
+
+// For reset all check box
+document.querySelector("#rset").addEventListener("click", function () {
+  window.location.reload();
+});
+
+// For sorting price low to high
+
+document.querySelector("#lowTohigh").addEventListener("click", function () {
+  let sortedItems = brushDataLS.sort(function (a, b) {
+    return a.price - b.price;
+  });
+
+  displayItemCards(sortedItems);
+});
+
+// For sorting price high to low
+
+document.querySelector("#highTolow").addEventListener("click", function () {
+  let sortedItems = brushDataLS.sort(function (a, b) {
+    return b.price - a.price;
+  });
+
+  displayItemCards(sortedItems);
+});
+
+// For clear all sorting items
+
+document.querySelector("#clr").addEventListener("click", function () {
+  window.location.reload();
+});

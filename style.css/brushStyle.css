@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
+  scroll-behavior: smooth;
 }
 body {
   /* font-family: 'Poppins', sans-serif; */
@@ -96,15 +98,13 @@ body {
 #cards_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(12, auto);
+  grid-template-rows: repeat(9, auto);
   gap: 60px 60px;
   width: 80%;
   margin: auto;
   margin-top: 30px;
 }
-#cards_container > div {
-  /* max-height: auto; */
-}
+
 #cards_container > div > div {
   background-color: #fff;
   text-align: center;
@@ -242,7 +242,7 @@ body {
 .small_window {
   width: 20%;
   /* height: px; */
-  transform: translate(-20%, 52%);
+  transform: translate(-20%, 55%);
 }
 .sort_body > p {
   padding: 4px 7px;
@@ -296,8 +296,8 @@ body {
     width: 50%;
   }
   .small_window {
-  width: 30%;
-  /* height: px; */
-  transform: translate(-20%, 52%);
-}
+    width: 30%;
+    /* height: px; */
+    transform: translate(-20%, 52%);
+  }
 }
