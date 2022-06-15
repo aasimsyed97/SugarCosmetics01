@@ -1,0 +1,80 @@
+makeupData=[
+    { name: "Matte Attack Transferproof Lipstick",
+     price:" Rs.699" ,
+     rating: ":star:4.7",
+     catagory: "Lips ",
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270" },
+
+   { name: " SMUDGE ME NOT MINIS SET - BLACK ",
+     price:" Rs.799" ,
+     rating: "4.7",
+      catagory: "Lips ",
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-minis-set-black-14964843151443.jpg?v=1620651368 " },
+
+       { name: "AIR KISS POWDER LIPSTICK ",
+     price:" Rs.499" ,
+     rating: "4.7",
+      catagory: "Lips ",
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116 " },
+
+       { name: "MATTE AS HELL CRAYON LIPSTICK ",
+     price:" Rs.699" ,
+     rating: "4.8",
+      catagory: "Lips ",
+     img:" https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1644394232 " },
+
+       { name: " NOTHING ELSE MATTER LONGWEAR LIPSTICK",
+     price:" Rs.499" ,
+     rating: "4.7",
+      catagory: "Lips ",
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_1da9dee5-9c2e-4135-994c-9b7d2ca23e6b.jpg?v=1641915296 " },
+
+       { name: "SMUDGE ME NOT LIQUID LIPSTICK ",
+     price:" Rs.499" ,
+     rating: "4.8",
+      catagory: "Lips ",
+     img:" https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813 " },
+
+       { name: " TIPS LIPS MOISTURIZING BALM",
+     price:" Rs.499" ,
+     rating: "4.8",
+      catagory: "Lips ",
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tipsy-lips-moisturizing-balm-01-mojito-15057279877203.jpg?v=1619122412 " },
+
+       { name: " GOOD MOODIES LIP CRAYON",
+     price:" Rs.599" ,
+     rating: "4.8",
+      catagory: "Lips ",
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/01_9e0bf9bb-92a6-45ca-8ce4-ce7d58c617ac.jpg?v=1639496863 " },
+
+       { name: "METTLE SATIN LIPSTICK ",
+     price:" Rs.699" ,
+     rating: "4.8",
+      catagory: "Lips ",
+     img:" https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-satin-lipstick-01-sophie-bright-fuchsia-pink-fuchsia-13706258088019.jpg?v=1619116113" },
+
+       { name: "SMUDGE NOT MINIS-MINT GREEN ",
+     price:" Rs.699" ,
+     rating: "4.9",
+      catagory: "Lips ",
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-mint-green-minis-set-14792910340179.jpg?v=1620652722 " },
+
+       { name: "SMUDGE ME NOT LIP DUOS ",
+     price:" Rs.599" ,
+     rating: "4.5",
+      catagory: "Lips",
+     img:" https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-lip-duo-01-brazen-raisin-burgundy-13200661643347.jpg?v=1619108721" },
+
+     { name: "ACE OF FACE FOUNDATION STICK",
+     price:" Rs.999" ,
+     rating: "4.8",
+     catagory: "Face",
+     img:" https://cdn.shopify.com/s/files/1/0906/2558/products/1_529c20ee-c872-4029-9702-8580d7b9a66f.jpg?v=1640178644" },
+  
+   { name: "Gloss Boss 24HR Eyeliner - 01 Back In Black (Black)",
+     price:" Rs.499" ,
+     rating: " :star:4.8",
+     catagory: "Eyes",
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-gloss-boss-24hr-eyeliner-01-back-in-black-black-12771395436627_a805d7b4-0863-4ae0-9f15-a2292ae9aa93.jpg?v=1632210594 " },
+
+]
