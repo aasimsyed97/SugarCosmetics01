@@ -182,7 +182,7 @@ body {
 .big_window {
   width: 50%;
   height: 400px;
-  transform: translate(-50%, 52%);
+  transform: translate(-50%, 90%);
 }
 .popup_content {
   width: 100%;
@@ -243,7 +243,7 @@ body {
 .small_window {
   width: 20%;
   /* height: px; */
-  transform: translate(-20%, 55%);
+  transform: translate(-20%, 65%);
 }
 .sort_body > p {
   padding: 4px 7px;

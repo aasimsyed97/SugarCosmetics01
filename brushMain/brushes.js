@@ -146,6 +146,8 @@ function displayItemCards(brushDataLS) {
   });
 }
 
+// creating add to cart function
+
 let cartItemsData = JSON.parse(localStorage.getItem("cartItems")) || [];
 function addToCartFunc(ele) {
   cartItemsData.push(ele);
