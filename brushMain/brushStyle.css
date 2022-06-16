@@ -99,10 +99,11 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(9, auto);
-  gap: 60px 60px;
+  gap: 60px;
   width: 80%;
   margin: auto;
   margin-top: 30px;
+  position: relative;
 }
 
 #cards_container > div > div {
@@ -143,7 +144,6 @@ body {
 #cards_container > div:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 #cards_container > div > div:last-child > p:last-child {
   width: 70%;
   background-color: #000000;
@@ -177,6 +177,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   display: none;
+  z-index: 1;
 }
 .big_window {
   width: 50%;

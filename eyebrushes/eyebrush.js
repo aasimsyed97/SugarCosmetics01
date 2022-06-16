@@ -38,6 +38,9 @@ eybrushItems = [
     rating: "5(2)",
   },
 ];
+
+let itemCount = localStorage.getItem("itemsInCart") || 0;
+
 localStorage.setItem("eyeBrushes", JSON.stringify(eybrushItems));
 let eyebrushDataLS = JSON.parse(localStorage.getItem("eyeBrushes"));
 
@@ -82,6 +85,8 @@ function displayItemCards(eyebrushDataLS) {
     // adding functionality to wish cart btn
     addwish.addEventListener("click", function () {
       addTowishList(ele);
+      itemCount++;
+      localStorage.setItem("itemsInCart", itemCount);
     });
 
     btnDiv.append(addwish, addCart);
@@ -96,6 +101,7 @@ let cartItemsData = JSON.parse(localStorage.getItem("cartItems")) || [];
 function addToCartFunc(ele) {
   cartItemsData.push(ele);
   localStorage.setItem("cartItems", JSON.stringify(cartItemsData));
+  alert("item added to cart successfuly");
 }
 
 let wishItemsData = JSON.parse(localStorage.getItem("wishList")) || [];
@@ -103,6 +109,7 @@ let wishItemsData = JSON.parse(localStorage.getItem("wishList")) || [];
 function addTowishList(ele) {
   wishItemsData.push(ele);
   localStorage.setItem("wishList", JSON.stringify(wishItemsData));
+  alert("item added successfuly");
 }
 
 // filtering of the separate products using js DOM

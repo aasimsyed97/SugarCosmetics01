@@ -6,20 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS FILE -->
-    <link rel="stylesheet" href="style.css/brushStyle.css">
+    <link rel="stylesheet" href="brushStyle.css">
     <!-- Font awesome file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>blend-trend-makeup-brush</title>
+    <style>
+        .filter_body {
+            width: 90%;
+            height: 230px;
+            margin: auto;
+            padding: 20px 10px;
+            color: #808080;
+            font-size: 13px;
+        }
+
+        .btn_sec {
+            width: 100%;
+            background: #000000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 14px;
+            padding: 7px 0px;
+            /* margin-top: 190px; */
+            cursor: pointer;
+        }
+    </style>
+
+    <title>eye-brush</title>
 </head>
 
 <body>
-    <div id="top">
-        <div id="banner">
-            <img src="https://d32baadbbpueqt.cloudfront.net/Collection/39da2bc6-d83c-4350-a2b1-0c0ec7a721a8.jpg"
-                alt="brushes_banner">
-        </div>
-    </div>
 
     <!-- Middle bar containing filter and sort items and descreptions -->
 
@@ -60,21 +78,12 @@
                         <p>Product Type</p>
                         <div>
                             <input type="checkbox" name="
-Eyeshadow Brush" id="eyeBs" value="eye"><span>Eyeshadow Brush</span><br>
-                            <input type="checkbox" name="
-
-Face Brush" id="faceBs" value="face"><span>Face Brush</span><br>
-                            <input type="checkbox" name="
-
-Foundation Brush" id="foundBs" value="foundation"><span>Foundation Brush</span><br>
-                            <input type="checkbox" name="
-
-Brush Combo" id="comboBs" value="combo"><span>Brush Combo</span>
+Eyeshadow Brush" id="eyeBs" value="eyeshadow"><span>Eyeshadow Brush</span><br>
                         </div>
                     </div>
                 </div>
                 <div class="btn_sec">
-                    <p id="apply">Apply Filter(s)</p>
+                    <p>Apply Filter(s)</p>
                 </div>
             </div>
             <div id="srt_rht">
@@ -121,14 +130,9 @@ Brush Combo" id="comboBs" value="combo"><span>Brush Combo</span>
     <div id="cards_container">
         <!-- all items card goes here from DOM -->
     </div>
-    <div class="msg_box">
-        <div class="msg">
-
-        </div>
-    </div>
 </body>
 
 <!-- scripts added -->
-<script src="brushes.js"></script>
+<script src="eyebrush.js"></script>
 
 </html>

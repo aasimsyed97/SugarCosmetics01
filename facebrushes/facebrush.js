@@ -46,6 +46,9 @@ facebrusheItems = [
     rating: " 4.9(24)",
   },
 ];
+
+let itemCount = localStorage.getItem("itemsInCart") || 0;
+
 localStorage.setItem("faceBrushes", JSON.stringify(facebrusheItems));
 let facebrushDataLS = JSON.parse(localStorage.getItem("faceBrushes"));
 
@@ -82,6 +85,8 @@ function displayItemCards(facebrushDataLS) {
 
     addCart.addEventListener("click", function () {
       addToCartFunc(ele);
+      itemCount++;
+      localStorage.setItem("itemsInCart", itemCount);
     });
 
     let addwish = document.createElement("img");
@@ -104,6 +109,7 @@ let cartItemsData = JSON.parse(localStorage.getItem("cartItems")) || [];
 function addToCartFunc(ele) {
   cartItemsData.push(ele);
   localStorage.setItem("cartItems", JSON.stringify(cartItemsData));
+  alert("item added to cart successfuly");
 }
 
 let wishItemsData = JSON.parse(localStorage.getItem("wishList")) || [];
@@ -111,6 +117,7 @@ let wishItemsData = JSON.parse(localStorage.getItem("wishList")) || [];
 function addTowishList(ele) {
   wishItemsData.push(ele);
   localStorage.setItem("wishList", JSON.stringify(wishItemsData));
+  alert("item added successfuly");
 }
 
 // filtering of the separate products using js DOM
