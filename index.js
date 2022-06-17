@@ -2,6 +2,34 @@ document.querySelector("#cancel").addEventListener("click", myfunction);
 function myfunction(event){
     console.log(event.target.parentNode.remove())
 }
+//LoginPage
+document.querySelector("#login").addEventListener("click", function(){
+    let loginPage=document.createElement("div")
+    let loginSlide=document.createElement("div");
+    loginPage.style.width="50%";
+    loginPage.style.position="fixed";
+    loginPage.style.right="0px";
+    loginPage.style.top="0px";
+    loginSlide.setAttribute("id","loginPhoto");
+    loginPage.style.height="100%";
+    loginPage.style.zIndex="100";
+    loginPage.style.backgroundColor="red";
+    loginSlide.style.width="100%"
+    loginSlide.style.height="100%"
+    let cross1=document.createElement("i")
+    cross1.setAttribute("class", "fa-solid fa-xmark");
+    cross1.setAttribute("id", "cancel")
+    cross1.style.left="15px"
+    cross1.addEventListener("click", function(){
+        loginPage.remove();
+    })
+    let h2Txt=document.createElement("h2");
+    h2Txt.style.color="white";
+    h2Txt.innerText="Login/Sign Up"
+    loginPage.append(loginSlide,cross1, h2Txt)
+    document.querySelector("body").append(loginPage);
+    
+});
 
 // displayImage
 let img1=document.querySelector("#displayImage>img");
@@ -16,6 +44,7 @@ buttons[0].addEventListener("click", function(){
     }
     else{
         forward++;
+        backward=forward;
     }
     img1.src=arr1[forward];
 })
@@ -26,6 +55,7 @@ buttons[1].addEventListener("click", function(){
     }
     else{
         backward--;
+        forward=backward;
     }
     img1.src=arr1[backward];
 })
@@ -194,6 +224,7 @@ buttons2[0].addEventListener("click", function(){
     }
     else{
         forward1++;
+        backward1=forward1;
     }
     img2.src=arr3[forward1];
 })
@@ -204,6 +235,70 @@ buttons2[1].addEventListener("click", function(){
     }
     else{
         backward1--;
+        forward1=backward1
     }
     img2.src=arr3[backward1];
+})
+// id="slidingImage2"
+let img3=document.querySelectorAll("#slidingImage2>div>img");
+let buttons3=document.querySelectorAll("#slidingImage2>button");
+let forward2=0;
+let backward2=0;
+let arr4=["https://d32baadbbpueqt.cloudfront.net/Homepage/66b53f34-09bf-4f37-a62a-e9d5f2a4b0cf.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/f8229b54-2d9c-4215-8901-4ddf2d94d084.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/9d535c56-b2f8-4f20-a076-79727a1548e4.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/0e757ba9-9124-4ce5-9a5b-eab5feb63ef0.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/927dc062-b21a-460e-a916-68fa21850841.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/444f4603-cc52-4560-9933-d58d1d9cb394.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/e4f6c286-358b-43f1-8f53-c26aa0718c57.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/66b53f34-09bf-4f37-a62a-e9d5f2a4b0cf.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/f8229b54-2d9c-4215-8901-4ddf2d94d084.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/9d535c56-b2f8-4f20-a076-79727a1548e4.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/0e757ba9-9124-4ce5-9a5b-eab5feb63ef0.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/927dc062-b21a-460e-a916-68fa21850841.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/444f4603-cc52-4560-9933-d58d1d9cb394.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/e4f6c286-358b-43f1-8f53-c26aa0718c57.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/66b53f34-09bf-4f37-a62a-e9d5f2a4b0cf.jpg" ];
+buttons3[0].addEventListener("click", function(){
+    
+    if(forward2>=11){
+        forward2=0;
+    }
+    else{
+        forward2=forward2+3;
+        backward2=forward2;
+    }
+    img3[0].src=arr4[forward2];
+    img3[1].src=arr4[forward2+1];
+    img3[2].src=arr4[forward2+2];
+})
+buttons3[1].addEventListener("click", function(){
+    
+    if(backward2<=3){
+        backward2=11;
+    }
+    else{
+        backward2=backward2-3;
+        forward2=backward2;
+    }
+    img3[0].src=arr4[backward2];
+    img3[1].src=arr4[backward2-1];
+    img3[2].src=arr4[backward2-2];
+})
+
+//id="displayImage3"
+let img4=document.querySelector("#displayImage3>img");
+let buttons4=document.querySelectorAll("#displayImage3>button");
+let forward3=0;
+let backward3=0;
+let arr5=["https://d32baadbbpueqt.cloudfront.net/Homepage/f25612b8-b6b8-4d08-8704-def43067c472.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/a9cd0d51-c6e6-4d0c-a75c-94ddcc3c1b08.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/6985f902-c3fe-4a20-bc76-1658a9109fd1.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/730cf92b-3d4a-4d08-bed8-db88e7911f32.jpg"];
+buttons4[0].addEventListener("click", function(){
+    console.log("i")
+    if(forward3>=3){
+        forward3=0;
+    }
+    else{
+        forward3++;
+        
+    }
+    backward3=forward3;
+    img4.src=arr5[forward3];
+    
+})
+buttons4[1].addEventListener("click", function(){
+    
+    if(backward3<=0){
+        backward3=3;
+    }
+    else{
+        backward3--;
+    }
+    forward3=backward3;
+    img4.src=arr5[backward3];
 })

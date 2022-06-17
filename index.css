@@ -12,8 +12,9 @@
     top: 0px;
     z-index: 10;
 }
+
 /* This is black Strip */
-#headline>div{
+#cancel{
     color: white;
     position: absolute;
     right: 15px;
@@ -36,6 +37,20 @@
     width: 450px;
     flex-wrap: wrap;
 }
+
+/* Login */
+#login{
+    cursor: pointer;
+}
+
+#loginPhoto{
+    background-image: url("bgImage.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(3px);
+}
+
 /* This is Search Bar */
 #searchBar img{
     height: 20px;
@@ -157,6 +172,9 @@ iframe{
     position: relative;
     display: flex;
 }
+#slidingImage>button{
+    font-size: 30px;
+}
 #container2{
     display: flex;
     width: 80%;
@@ -217,7 +235,61 @@ iframe{
     left: 50px;
 }
 /* id="slidingImage2" */
+#slidingImage2{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#slidingImage2>div{
+    width: 32%;
+
+}
+#slidingImage2>div>img{
+    width: 100%;
+}
+#slidingImage2>button{
+    position: absolute;
+    
+    top: 150px;
+    right: 50px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: rgba(10, 10, 10, 0.4);
+    border: none;
+    border-radius: 50px;
+}
+#slidingImage2>button+button{
+    left: 50px;
+}
 /* id="displayImage3" */
+#displayImage3{
+    position: relative;
+    height: 330px;
+}
+#displayImage3>img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+#displayImage3>button{
+    position: absolute;
+    
+    top: 150px;
+    right: 50px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: rgba(10, 10, 10, 0.4);
+    border: none;
+    border-radius: 50px;
+}
+#displayImage3>button+button{
+    left: 50px;
+}
 /* id="videosliding" */
 .subHeading2{
     font-family: Quicksand;
