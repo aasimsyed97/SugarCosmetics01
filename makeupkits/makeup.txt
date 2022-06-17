@@ -1,0 +1,86 @@
+let trendingdata =[
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/399160329-9-to-5-makeup-kit-wbg-01.jpg?v=1654013564",
+        name:"MATTE ATTACK TRANSFER PROOF LIPSTICK",
+        price:" Rs.699",
+        rating:" 4.7(428)",
+        category:"sugarmerchstation",
+        prodID:"1",
+    },
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/383779802-summer-makeup-kit-wbg-images.jpg?v=1649087039",
+        name: "AIR KISS POWDER LIPSTICK",
+        price:" Rs.499",
+        rating:" 4.7(53)",
+        category:"makeupkits",
+        prodID:"2",
+    },
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/SUGAR-SETS-WBG-IMAGES-Set2.jpg?v=1632844196",
+        name:"Blend Trend Dual Eyeshadow Brush - 413 Flat + Round Xl",
+        category:"makeupkits",
+        price:"Rs.599" ,
+        rating:"5(2)",
+        prodID:"25",
+    },
+     
+     {
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002",
+
+     name: "Blend Trend Face Brush - 006 highlighter",
+     category: "bestseller",
+     price:"Rs.399",
+     rating:"4.7(23)", 
+     prodID:"29",
+    },
+       {
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0cbf7ca7-3b1c-4838-8fda-176ebd7d38fa.jpg?v=1649423983",
+
+     name: "Blend Trend Foundation Brush - 052 kabuki",
+     category:"makeupkits",
+     price:"Rs.399",
+     rating:"4.8(26)",
+     prodID:"30", 
+    },
+       {
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/390893522-eid-special-kit-wbg_1.jpg?v=1651238467",
+
+     name: "Blend Trend Foundation Brush - 001 blush",
+     category: "bestseller",
+     price:"Rs.399",
+     rating:"4.9(15)",
+     prodID:"31",  
+    },
+        {
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
+
+     name: "Blend Trend Foundation Brush - 007 powder",
+     category:"makeupkits",
+     price:"RS.399",
+     rating:"4.9(24)", 
+     prodID:"32", 
+    },
+    {
+        img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-daily-moisturizer-28038347292755.jpg?v=1619155748",
+        name: "CITRUS GOT REAL DAILY MOISTURIZER",
+        price: "Rs.499",
+        rating: 4.9
+    },
+    {
+        img: "https://cdn.shopify.com/s/files/1/0906/2558/products/Instant-Pore-Cleansing-Mask-1_1.jpg?v=1626423690",
+        name: "AQUAHOLIC INSTANT PORE CLEANSING MASK",
+        price: "Rs.499",
+        rating: 4.8
+    },
+    {
+        img: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771",
+        name: "BLING LEADER ILLUMINATING SUNSCREEN SPF35 P+++",
+        price: "Rs.599",
+        rating: 4.8
+    },
+         
+     
+        
+      
+
+    ]
