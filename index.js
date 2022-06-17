@@ -25,8 +25,10 @@ document.querySelector("#login").addEventListener("click", function(){
     })
     let h2Txt=document.createElement("h2");
     h2Txt.style.color="white";
-    h2Txt.innerText="Login/Sign Up"
-    loginPage.append(loginSlide,cross1, h2Txt)
+    h2Txt.innerText="Login/Sign Up";
+    
+    
+    loginPage.append(loginSlide,cross1,h2Txt)
     document.querySelector("body").append(loginPage);
     
 });
