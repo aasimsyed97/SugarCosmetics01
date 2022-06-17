@@ -44,13 +44,82 @@
 }
 
 #loginPhoto{
-    background-image: url("bgImage.jpeg");
+    background-image: url("https://in.sugarcosmetics.com/Login_bg.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-filter: blur(3px);
 }
+#loginbox{
+    width: 90%;
+    height: 500px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    border: 0.5px solid black;
+    top: 90px;
+    left: 15px;
+    z-index: 100;
+    padding: 15px;
+    
+}
+#loginbox>img{
+    width: 40px;
+    
+    margin: 15px 0px 0px 0px;
+}
+#loginbox>label{
+    font-family: Quicksand;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 25px 0px 20px 0px;
+    position: relative;
+    top: -10px;
+    
+}
+#loginbox>label>input{
+    margin: 30px 20px;
+    width: 50%;
+    height: 30px;
+    font-size: 25px;
+}
+#loginbox>label>button{
+    width: 130px;
+    height: 35px;
+    background-color: #ADADAD;
+    color: white;
 
+}
+#loginbox>P:first-child{
+    font-size: 14px;
+    position: relative;
+    top: -20px;
+}
+#loginbox>p+p{
+    font-size: 14px;
+    margin-top: 70px;
+}
+.otp{
+    width: 40px;
+    height: 40px;
+    margin: 30px 0px 30px 10px;
+}
+#loginbox>button{
+    width: 130px;
+    height: 35px;
+    background-color: #ADADAD;
+    color: white;
+    
+}
+#T-C{
+   margin-top: 25px; 
+   display: flex;
+   
+   
+}
+#T-C>input{
+    margin-right: 10px;
+}
 /* This is Search Bar */
 #searchBar img{
     height: 20px;

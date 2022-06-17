@@ -26,9 +26,48 @@ document.querySelector("#login").addEventListener("click", function(){
     let h2Txt=document.createElement("h2");
     h2Txt.style.color="white";
     h2Txt.innerText="Login/Sign Up";
-    
-    
-    loginPage.append(loginSlide,cross1,h2Txt)
+    h2Txt.style.position="absolute";
+    h2Txt.style.zIndex="1000";
+    h2Txt.style.top="40px";
+    h2Txt.style.left="15px";
+    container2=document.createElement("div");
+    container2.setAttribute("id", "loginbox")
+    let photo1=document.createElement("img");
+    photo1.setAttribute("src", "https://in.sugarcosmetics.com/smartphone.svg")
+    let pTAg=document.createElement("label");
+    pTAg.innerText="Login/Sign Up Using Phone";
+    let label=document.createElement("label");
+    label.innerHTML=`+91<input type="tel" required max="11"><button>Request OTP</button>`
+    let break1=document.createElement("br")
+    let small=document.createElement("p")
+    let otpEnter=document.createElement("p")
+    otpEnter.innerText="Enter the 4 digit OTP received on your phone.";
+    small.innerText="Enter your phone number to request an OTP";
+    let otp1=document.createElement("input");
+    otp1.setAttribute("class", "otp");
+    otp1.setAttribute("type", "number");
+    let otp2=document.createElement("input");
+    otp2.setAttribute("class", "otp");
+    otp2.setAttribute("type", "number");
+    let otp3=document.createElement("input");
+    otp3.setAttribute("class", "otp");
+    otp3.setAttribute("type", "number");
+    let otp4=document.createElement("input");
+    otp4.setAttribute("class", "otp");
+    otp4.setAttribute("type", "number");
+    let button5=document.createElement("button");
+    button5.innerText="Verify OTP";
+    let break2=document.createElement("br")
+    let break3=document.createElement("br");
+    let checkbox=document.createElement("input");
+    checkbox.setAttribute("type", "checkbox")
+    let matter=document.createElement("p");
+    matter.innerHTML=`Get Important Updates on Whatsapp.<a href="T&C.html"> <b>Terms and Conditions</b></a>`
+    let div=document.createElement("div");
+    div.append(checkbox,matter);
+    div.setAttribute("id", "T-C")
+    container2.append(photo1, pTAg,break1, label, small, otpEnter, otp1, otp2, otp3, otp4, break2, button5, break3, div)
+    loginPage.append(h2Txt,container2, loginSlide,cross1,)
     document.querySelector("body").append(loginPage);
     
 });
