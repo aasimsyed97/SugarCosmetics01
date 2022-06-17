@@ -35,24 +35,7 @@ let trendingdata =[
      rating:"4.7(23)", 
      prodID:"29",
     },
-       {
-     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0cbf7ca7-3b1c-4838-8fda-176ebd7d38fa.jpg?v=1649423983",
-
-     name: "Blend Trend Foundation Brush - 052 kabuki",
-     category:"makeupkits",
-     price:"Rs.399",
-     rating:"4.8(26)",
-     prodID:"30", 
-    },
-       {
-     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/390893522-eid-special-kit-wbg_1.jpg?v=1651238467",
-
-     name: "Blend Trend Foundation Brush - 001 blush",
-     category: "bestseller",
-     price:"Rs.399",
-     rating:"4.9(15)",
-     prodID:"31",  
-    },
+       
         {
      img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
 

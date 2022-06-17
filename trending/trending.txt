@@ -7,14 +7,7 @@ let trendingdata =[
         category:"sugarmerchstation",
         prodID:"1",
     },
-    {
-        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116",
-        name: "AIR KISS POWDER LIPSTICK",
-        price:" Rs.499",
-        rating:" 4.7(53)",
-        category:"makeupkits",
-        prodID:"2",
-    },
+   
     {
         img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-cooling-stick-28037939429459.jpg?v=1644409181",
         name: "CITRUS GOT REAL COOLING STICK",
