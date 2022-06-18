@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeUp</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #products {
+           width: 80%;
+           margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 15px 30px;
+
+        }
+
+        #products>div>img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <select id="filter">
+        <option value="All"> MAKEUP</option>
+        <option value="lips"> Lips</option>
+        <option value="face"> Face</option>
+        <option value="eyes"> Eyes</option>
+    </select>
+    <div id="products">
+        <!-- all product data will be append here  -->
+    </div>
+</body>
+
+</html>
+<script>
+    let makeupData = [
+        {
+            name: "Matte Attack Transferproof Lipstick",
+            price: " Rs.699",
+            rating: ":star:4.7",
+            catagory: "lips",
+            productId: "product1",
+            img: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270"
+        },
+
+        {
+            name: " SMUDGE ME NOT MINIS SET - BLACK ",
+            price: " Rs.799",
+            rating: "4.7",
+            catagory: "lips",
+            img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-minis-set-black-14964843151443.jpg?v=1620651368 "
+        },
+
+        {
+            name: "AIR KISS POWDER LIPSTICK ",
+            price: " Rs.499",
+            rating: "4.7",
+            catagory: "lips",
+            img: "https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116 "
+        },
+
+        {
+            name: "MATTE AS HELL CRAYON LIPSTICK ",
+            price: " Rs.699",
+            rating: "4.8",
+            catagory: "lips",
+            img: " https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1644394232 "
+        },
+
+        {
+            name: " NOTHING ELSE MATTER LONGWEAR LIPSTICK",
+            price: " Rs.499",
+            rating: "4.7",
+            catagory: "lips",
+            img: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_1da9dee5-9c2e-4135-994c-9b7d2ca23e6b.jpg?v=1641915296 "
+        },
+
+        {
+            name: "SMUDGE ME NOT LIQUID LIPSTICK ",
+            price: " Rs.499",
+            rating: "4.8",
+            catagory: "lips",
+            img: " https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813 "
+        },
+
+        {
+            name: " TIPS LIPS MOISTURIZING BALM",
+            price: " Rs.499",
+            rating: "4.8",
+            catagory: "lips",
+            img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tipsy-lips-moisturizing-balm-01-mojito-15057279877203.jpg?v=1619122412 "
+        },
+
+        {
+            name: " GOOD MOODIES LIP CRAYON",
+            price: " Rs.599",
+            rating: "4.8",
+            catagory: "lips",
+            img: "https://cdn.shopify.com/s/files/1/0906/2558/products/01_9e0bf9bb-92a6-45ca-8ce4-ce7d58c617ac.jpg?v=1639496863 "
+        },
+
+        {
+            name: "METTLE SATIN LIPSTICK ",
+            price: " Rs.699",
+            rating: "4.8",
+            catagory: "lips",
+            img: " https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-satin-lipstick-01-sophie-bright-fuchsia-pink-fuchsia-13706258088019.jpg?v=1619116113"
+        },
+
+        {
+            name: "SMUDGE NOT MINIS-MINT GREEN ",
+            price: " Rs.699",
+            rating: "4.9",
+            catagory: "lips",
+            img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-mint-green-minis-set-14792910340179.jpg?v=1620652722 "
+        },
+
+        {
+            name: "SMUDGE ME NOT LIP DUOS ",
+            price: " Rs.599",
+            rating: "4.5",
+            catagory: "lips",
+            img: " https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-lip-duo-01-brazen-raisin-burgundy-13200661643347.jpg?v=1619108721"
+        },
+
+        {
+            name: "ACE OF FACE FOUNDATION STICK",
+            price: " Rs.999",
+            rating: "4.8",
+            catagory: "face",
+            productId: "product1",
+            img: " https://cdn.shopify.com/s/files/1/0906/2558/products/1_529c20ee-c872-4029-9702-8580d7b9a66f.jpg?v=1640178644"
+        },
+
+        {
+            name: "Gloss Boss 24HR Eyeliner - 01 Back In Black (Black)",
+            price: " Rs.499",
+            rating: " :star:4.8",
+            catagory: "eyes",
+            productId: "product1",
+            img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-gloss-boss-24hr-eyeliner-01-back-in-black-black-12771395436627_a805d7b4-0863-4ae0-9f15-a2292ae9aa93.jpg?v=1632210594 "
+        },
+
+    ]
+
+
+    let productsCont = document.querySelector("#products");
+    let filter = document.getElementById("filter");
+   let cart_Items =JSON.parse( localStorage.getItem("cartItems")) || [];
+    function displayProduct(makeupData) {
+         productsCont.innerHTML="";
+        makeupData.forEach(function (elem) {
+            let img = document.createElement("img");
+            img.setAttribute("src", elem.img)
+            let product = document.createElement("div");
+            let name = document.createElement("h2")
+            name.innerText = elem.name;
+            let price = document.createElement("p")
+            price.innerText = elem.price;
+            let rating = document.createElement("p")
+            rating.innerText = elem.rating;
+            let catagory = document.createElement("p")
+            catagory.innerText = elem.catagory;
+
+            let addToCart = document.createElement("button")
+            addToCart.addEventListener("click",function(element){ 
+                if(addToCartFunc(element.productId)===true){ 
+                    alert("Product added succesfully");
+                    cart_Items.push(elem);
+                     localStorage.setItem("cartItems",JSON.stringify(cart_Items));
+                } else{ 
+                    alert("Product Alredy in the cart");
+                }
+            })
+            addToCart.innerText = "Add to Cart"
+
+            product.append(img, name, price, rating, catagory,addToCart);
+            productsCont.append(product);
+        });
+ 
+    }
+    displayProduct(makeupData);
+
+    filter.addEventListener("change",function(){
+
+        if(filter.value === "All") {
+            displayProduct(makeupData);
+        }else{
+            let filtered= makeupData.filter(function (element) {
+                    return element.catagory === filter.value;
+                })
+            displayProduct(filtered)
+        }
+    }) 
+
+   function addToCartFunc(id){ 
+    for(let i=0;i<cart_Items.length;i++){
+        if(cart_Items[i].productId===id){
+            return false;
+        } 
+    }   
+    return true;
+   };
+
+</script>
