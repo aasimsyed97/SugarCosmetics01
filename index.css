@@ -52,7 +52,7 @@
 }
 #loginbox{
     width: 90%;
-    height: 500px;
+    height: 440px;
     position: absolute;
     background-color: white;
     border-radius: 10px;
@@ -112,13 +112,43 @@
     
 }
 #T-C{
-   margin-top: 25px; 
+   margin-top: 10px; 
    display: flex;
-   
+   color: black;
    
 }
 #T-C>input{
     margin-right: 10px;
+}
+#last1{
+    position: absolute;
+    z-index: 100;
+    left: 25px;
+    bottom: 10px;
+}
+#id1{
+    text-align: center;
+    position: absolute;
+    bottom: 90px;
+    left: 15px;
+    z-index: 100;
+    margin: 10px;
+}
+#id2{
+    text-align: center;
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
+    z-index: 100;
+    margin: 10px;
+}
+#id3{
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    z-index: 100;
+    margin: 10px;
 }
 /* This is Search Bar */
 #searchBar img{
@@ -254,7 +284,7 @@ iframe{
     width: 23%;
     background-color: white;
     text-align: center;
-    height: 350px;
+    height: 400px;
     display: grid;
     align-content: space-between;
 }
@@ -360,6 +390,15 @@ iframe{
     left: 50px;
 }
 /* id="videosliding" */
+#videosliding>div{
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+}
+#videosliding>div>iframe{
+    height: 350px;
+    width: 200px;
+}
 .subHeading2{
     font-family: Quicksand;
     font-size: 28px;
@@ -368,8 +407,127 @@ iframe{
     margin: 15px 0px;   
 }
 /* id="slidingImage3" */
+#slidingImage3{
+    width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+    margin: 20px 0px;
+    position: relative;
+    display: flex;
+}
+#slidingImage3>button{
+    font-size: 30px;
+}
+#container3{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+#container3>div{
+    width: 23%;
+    background-color: white;
+    text-align: center;
+    height: 400px;
+    display: grid;
+    align-content: space-between;
+}
+#container3>div>div>button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 30px;
+    font-size: 12px;
+}
+#container3>div>img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+#container2>div>p{
+    margin: 5px 0px;
+}
+#container3>div>h4{
+    margin: 7px 0px;
+}
+
+
 /* id="slidingImage4" */
+#slidingImage4{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#slidingImage4>div{
+    width: 32%;
+
+}
+#slidingImage4>div>img{
+    width: 100%;
+}
+#slidingImage4>button{
+    position: absolute;
+    
+    top: 150px;
+    right: 50px;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: rgba(10, 10, 10, 0.4);
+    border: none;
+    border-radius: 50px;
+}
+#slidingImage4>button+button{
+    left: 50px;
+}
+
+
 /* id="slidingImage5" */
+#slidingImage5{
+    width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+    margin: 20px 0px;
+    position: relative;
+    display: flex;
+}
+#slidingImage5>button{
+    font-size: 30px;
+}
+#container5{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+}
+#container5>div{
+    width: 23%;
+    background-color: white;
+    text-align: center;
+    height: 400px;
+    display: grid;
+    align-content: space-between;
+}
+#container5>div>div>button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 30px;
+    font-size: 12px;
+}
+#container5>div>img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+#container5>div>p{
+    margin: 5px 0px;
+}
+#container5>div>h4{
+    margin: 7px 0px;
+}
+/* container */
 #container{
     display: flex;
     justify-content: space-around;

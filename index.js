@@ -62,12 +62,24 @@ document.querySelector("#login").addEventListener("click", function(){
     let checkbox=document.createElement("input");
     checkbox.setAttribute("type", "checkbox")
     let matter=document.createElement("p");
-    matter.innerHTML=`Get Important Updates on Whatsapp.<a href="T&C.html"> <b>Terms and Conditions</b></a>`
+    matter.innerHTML=`Get Important Updates on Whatsapp.<a href="T-C.html"> <b>Terms and Conditions</b></a>`
     let div=document.createElement("div");
     div.append(checkbox,matter);
     div.setAttribute("id", "T-C")
+    let h41=document.createElement("h4");
+    h41.innerText="Registering for this site allows you to access your order status and history. Just fill in the"
+    h41.setAttribute("id", "id1")
+    let h42=document.createElement("h4");
+    h42.setAttribute("id", "id2")
+    h42.innerText="fields below, and we'll get a new account set up for you in no time. We will only ask you";
+    let h43=document.createElement("h4");
+    h43.innerText="for information necessary to make the purchase process faster and easier."
+    h43.setAttribute("id", "id3")
+    let p=document.createElement("p");
+    p.setAttribute("id", "last1")
+    p.innerHTML=`By Signing up or logging in, you agree to our <a href="T-C.html"> <b>Terms and Conditions</b></a>`;
     container2.append(photo1, pTAg,break1, label, small, otpEnter, otp1, otp2, otp3, otp4, break2, button5, break3, div)
-    loginPage.append(h2Txt,container2, loginSlide,cross1,)
+    loginPage.append(h2Txt,container2, h41, h42, h43, p, loginSlide,cross1,)
     document.querySelector("body").append(loginPage);
     
 });
@@ -193,8 +205,8 @@ box1.addEventListener("mouseover", function(){
     box1.append(btn2_1,btn2_2);
     btn2_1.addEventListener("click", function(){
     
-        if(back<=0){
-            back=15;
+        if(back<4){
+            back=12;
         }
         else{
             back=back-3;
@@ -219,7 +231,7 @@ box1.addEventListener("mouseover", function(){
     })
     btn2_2.addEventListener("click", function(){
     
-        if(go>=15){
+        if(go>=8){
             go=0;
         }
         else{
@@ -342,4 +354,295 @@ buttons4[1].addEventListener("click", function(){
     }
     forward3=backward3;
     img4.src=arr5[backward3];
+})
+
+
+// slidingImage3
+let btn3_1=document.createElement("button");
+let btn3_2=document.createElement("button");
+let arr6=[
+    {photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_cbc3a2d6-9266-467e-a973-017e3c65d5cf.jpg?v=1649433283",
+des:"SHINE & POUT MAKEUP VALUE SET",
+price: "₹ 999 (16% 0ff)",
+btn: "SHOP NOW"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_116c638f-21f6-4640-aab0-6022540b24e1.jpg?v=1649692784",
+des:"MESMERIZE EYES MAKEUP SET",
+price: "₹ 1299 (18% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/2_bb525208-246a-4f40-b57f-d88372708398.jpg?v=1655308814",
+des:"GLAM EYE MAKEUP VALUE SET",
+price: "₹ 1249 (19% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e4b6c948-178e-4bfe-a3b3-926119dea615.jpg?v=1649865681",
+des:"SET OF 4 KAJAL SET",
+price: "₹ 799 (19% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_e4b6c948-178e-4bfe-a3b3-926119dea615.jpg?v=1649865681",
+des:"SET OF 4 KAJAL SET",
+price: "₹ 799 (19% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Value-Set-WBG-2.jpg?v=1642089012",
+des:"RED CARPET MAKEUP TRIO",
+price: "₹ 799 (23% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Value-set-wbg.jpg?v=1627055238",
+des:"SUNSCREEM+KOHL VALUE SET",
+price: "₹ 549 (38% Off)",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-lip-balm-sheet-mask-15782913671251.jpg?v=1619152222",
+des:"LIP BALM + SHEET MASK",
+price: "₹ 299 (14% Off)",
+btn: "CHOOSE PRODUCTS"}
+];
+let go2=0;
+let back2=0;
+let box2=document.querySelector("#slidingImage3");
+box2.addEventListener("mouseover", function(){
+    btn3_1.innerText="<";
+    btn3_2.innerText=">";
+    btn3_1.style.height="70px";
+    btn3_1.style.width="30px";
+    btn3_2.style.height="70px";
+    btn3_2.style.width="30px";
+    btn3_1.style.position="absolute";
+    
+    btn3_2.style.marginTop="120px";
+    btn3_1.style.top="120px";
+    
+    btn3_1.style.left="20px";
+    btn3_1.style.backgroundColor="white";
+    btn3_2.style.backgroundColor="white";
+    btn3_1.style.border="1px solid black";
+    btn3_2.style.border="1px solid black";
+    box2.append(btn3_1,btn3_2);
+    btn3_1.addEventListener("click", function(){
+    
+        if(back2<=0){
+            back2=5;
+        }
+        else{
+            back2=back2-3;
+        }
+        go2=back2;
+        document.querySelector("#B1>img").src=arr6[back2].photo;
+        document.querySelector("#B1>h4").innerText=arr6[back2].des;
+        document.querySelector("#des3-1").innerText=arr6[back2].price;
+        document.querySelector("#btn3-1").innerText=arr6[back2].btn;
+        document.querySelector("#B2>img").src=arr6[back2-1].photo;
+        document.querySelector("#B2>h4").innerText=arr6[back2-1].des;
+        document.querySelector("#des3-2").innerText=arr6[back2-1].price;
+        document.querySelector("#btn3-2").innerText=arr6[back2-1].btn;
+        document.querySelector("#B3>img").src=arr6[back2-2].photo;
+        document.querySelector("#B3>h4").innerText=arr6[back2-2].des;
+        document.querySelector("#des3-3").innerText=arr6[back2-2].price;
+        document.querySelector("#btn3-3").innerText=arr6[back2-2].btn;
+        document.querySelector("#B4>img").src=arr6[back2-3].photo;
+        document.querySelector("#B4>h4").innerText=arr6[back2-3].des;
+        document.querySelector("#des3-4").innerText=arr6[back2-3].price;
+        document.querySelector("#btn3-4").innerText=arr6[back2-3].btn;
+    })
+    btn3_2.addEventListener("click", function(){
+    
+        if(go2>=5){
+            go2=0;
+        }
+        else{
+            go2=go2+3;
+        }
+        back2=go2;
+        document.querySelector("#B1>img").src=arr6[go2].photo;
+        document.querySelector("#B1>h4").innerText=arr6[go2].des;
+        document.querySelector("#des3-1").innerText=arr6[go2].price;
+        document.querySelector("#btn3-1").innerText=arr6[go2].btn;
+        document.querySelector("#B2>img").src=arr6[go2+1].photo;
+        document.querySelector("#B2>h4").innerText=arr6[go2+1].des;
+        document.querySelector("#des3-2").innerText=arr6[go2+1].price;
+        document.querySelector("#btn3-2").innerText=arr6[go2+1].btn;
+        document.querySelector("#B3>img").src=arr6[go2+2].photo;
+        document.querySelector("#B3>h4").innerText=arr6[go2+2].des;
+        document.querySelector("#des3-3").innerText=arr6[go2+2].price;
+        document.querySelector("#btn3-3").innerText=arr6[go2+2].btn;
+        document.querySelector("#B4>img").src=arr6[go2+3].photo;
+        document.querySelector("#B4>h4").innerText=arr6[go2+3].des;
+        document.querySelector("#des3-4").innerText=arr6[go2+3].price;
+        document.querySelector("#btn3-4").innerText=arr6[go2+3].btn;
+    })
+})
+box2.addEventListener("mouseout", function(){
+    btn3_1.style.backgroundColor="transparent";
+    btn3_2.style.backgroundColor="transparent";
+    btn3_1.style.border="none";
+    btn3_2.style.border="none";
+    btn3_1.innerText="";
+    btn3_2.innerText="";
+})
+// id="slidingImage4"
+let img5=document.querySelectorAll("#slidingImage4>div>img");
+let buttons5=document.querySelectorAll("#slidingImage4>button");
+let forward5=0;
+let backward5=0;
+let arr7=[ "https://d32baadbbpueqt.cloudfront.net/Homepage/58490d17-977a-46d4-ae71-c9baf559a736.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/a246bd5c-0383-4f03-905c-d6ab7f3bdb23.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/ea727dfe-f673-4cb5-b9b3-354bcf5c41a2.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/f40172c6-147a-4895-ac1f-d430c3cc0a55.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/9a090aa5-6bd8-4d10-a77f-409c3619fc89.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/2ef5fc68-77d8-4083-9a4d-f37f42e98feb.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/58490d17-977a-46d4-ae71-c9baf559a736.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/a246bd5c-0383-4f03-905c-d6ab7f3bdb23.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/ea727dfe-f673-4cb5-b9b3-354bcf5c41a2.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/f40172c6-147a-4895-ac1f-d430c3cc0a55.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/9a090aa5-6bd8-4d10-a77f-409c3619fc89.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/2ef5fc68-77d8-4083-9a4d-f37f42e98feb.jpg"];
+buttons5[0].addEventListener("click", function(){
+    
+    if(forward5>3){
+        forward5=0;
+    }
+    else{
+        forward5=forward5+3;
+    }
+    backward5=forward5;
+    img5[0].src=arr7[forward5];
+    img5[1].src=arr7[forward5+1];
+    img5[2].src=arr7[forward5+2];
+})
+buttons5[1].addEventListener("click", function(){
+    
+    if(backward5<=2){
+        backward5=5;
+    }
+    else{
+        backward5=backward5-3;
+        
+    }
+    console.log(backward5)
+    forward5=backward5;
+    img5[0].src=arr7[backward5];
+    img5[1].src=arr7[backward5-1];
+    img5[2].src=arr7[backward5-2];
+})
+
+// slidingImage5
+let btn5_1=document.createElement("button");
+let btn5_2=document.createElement("button");
+let arr8=[
+    {photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-matte-as-hell-crayon-lipstick-minis-set-28270316945491.jpg?v=1623073051",
+des:"MATTE AS HELL CRAYON LIPSTICK MINIS SET",
+price: "₹ 1099 (38% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-minis-set-15520724582483.jpg?v=1620651966",
+des:"SMUDGE ME NOT LIQUID LIPSTICK MINIS SET",
+price: "₹ 799 (20% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_37e8dc88-a720-44ed-a5f3-1e0f0e95bc17.jpg?v=1649692645",
+des:"DATE NIGHT MAKEUP KIT",
+price: "₹ 1599 (27% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Wedding-Makeup-Kit---WBG-Images-op-3.jpg?v=1653494398",
+des:"WEDDING MAKEUP KIT",
+price: "₹ 1699 (27% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0cbf7ca7-3b1c-4838-8fda-176ebd7d38fa.jpg?v=1649423983",
+des:"FESTIVE READY KIT",
+price: "₹ 2499 (30% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/RakshaBandhanKit-WBGImages.jpg?v=1654694624",
+des:"EVERYDAY MAKEUP KIT",
+price: "₹ 1499 (24% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_0ca61ef7-05ce-49be-9fa1-de7c41b99a1f.jpg?v=1650022932",
+des:"ANNIVERSARY KIT",
+price: "₹ 1999 (28% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/PartyReadyKit-WBG1.png?v=1642487420",
+des:"PARTY READY KIT",
+price: "₹ 1299 (25% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_969f5548-2c56-4506-ada8-159b53a8f630.jpg?v=1649423977",
+des:"GLAM UP KIT",
+price: "₹ 1999 (28%)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/SUGAR-SETS-WBG-IMAGES-Set2.jpg?v=1632844196",
+des:"GO GETTER SET",
+price: "₹ 99 (22% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Hi-5-KIT-WBG-Images1_43e43755-262f-4b35-973a-6e5fad7222a4.jpg?v=1643125074",
+des:"HI-5 KIT",
+price: "₹ 99 (22% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/combo-image.jpg?v=1646298736",
+des:"4-IN-1 MAKEUP SET",
+price: "₹ 899 (21% Off)",
+btn: "CHOOSE PRODUCTS"},
+];
+let go3=0;
+let back3=0;
+let box3=document.querySelector("#slidingImage5");
+box3.addEventListener("mouseover", function(){
+    btn5_1.innerText="<";
+    btn5_2.innerText=">";
+    btn5_1.style.height="70px";
+    btn5_1.style.width="30px";
+    btn5_2.style.height="70px";
+    btn5_2.style.width="30px";
+    btn5_1.style.position="absolute";
+    
+    btn5_2.style.marginTop="120px";
+    btn5_1.style.top="120px";
+    
+    btn5_1.style.left="20px";
+    btn5_1.style.backgroundColor="white";
+    btn5_2.style.backgroundColor="white";
+    btn5_1.style.border="1px solid black";
+    btn5_2.style.border="1px solid black";
+    box3.append(btn5_1,btn5_2);
+    btn5_1.addEventListener("click", function(){
+    
+        if(back3<=0){
+            back3=5;
+        }
+        else{
+            back3=back3-3;
+        }
+        go3=back3;
+        document.querySelector("#C1>img").src=arr8[back3].photo;
+        document.querySelector("#C1>h4").innerText=arr8[back3].des;
+        document.querySelector("#des5-1").innerText=arr8[back3].price;
+        document.querySelector("#btn5-1").innerText=arr8[back3].btn;
+        document.querySelector("#C2>img").src=arr8[back3-1].photo;
+        document.querySelector("#C2>h4").innerText=arr8[back3-1].des;
+        document.querySelector("#des5-2").innerText=arr8[back3-1].price;
+        document.querySelector("#btn5-2").innerText=arr8[back3-1].btn;
+        document.querySelector("#C3>img").src=arr8[back3-2].photo;
+        document.querySelector("#C3>h4").innerText=arr8[back3-2].des;
+        document.querySelector("#des5-3").innerText=arr8[back3-2].price;
+        document.querySelector("#btn5-3").innerText=arr8[back3-2].btn;
+        document.querySelector("#C4>img").src=arr8[back3-3].photo;
+        document.querySelector("#C4>h4").innerText=arr8[back3-3].des;
+        document.querySelector("#des5-4").innerText=arr8[back3-3].price;
+        document.querySelector("#btn5-4").innerText=arr8[back3-3].btn;
+    })
+    btn5_2.addEventListener("click", function(){
+    
+        if(go3>=5){
+            go3=0;
+        }
+        else{
+            go3=go3+3;
+        }
+        back3=go3;
+        document.querySelector("#C1>img").src=arr8[go3].photo;
+        document.querySelector("#C1>h4").innerText=arr8[go3].des;
+        document.querySelector("#des5-1").innerText=arr8[go3].price;
+        document.querySelector("#btn5-1").innerText=arr8[go3].btn;
+        document.querySelector("#C2>img").src=arr8[go3+1].photo;
+        document.querySelector("#C2>h4").innerText=arr8[go3+1].des;
+        document.querySelector("#des5-2").innerText=arr8[go3+1].price;
+        document.querySelector("#btn5-2").innerText=arr8[go3+1].btn;
+        document.querySelector("#C3>img").src=arr8[go3+2].photo;
+        document.querySelector("#C3>h4").innerText=arr8[go3+2].des;
+        document.querySelector("#des5-3").innerText=arr8[go3+2].price;
+        document.querySelector("#btn5-3").innerText=arr8[go3+2].btn;
+        document.querySelector("#C4>img").src=arr8[go3+3].photo;
+        document.querySelector("#C4>h4").innerText=arr8[go3+3].des;
+        document.querySelector("#des5-4").innerText=arr8[go3+3].price;
+        document.querySelector("#btn5-4").innerText=arr8[go3+3].btn;
+    })
+})
+box3.addEventListener("mouseout", function(){
+    btn5_1.style.backgroundColor="transparent";
+    btn5_2.style.backgroundColor="transparent";
+    btn5_1.style.border="none";
+    btn5_2.style.border="none";
+    btn5_1.innerText="";
+    btn5_2.innerText="";
 })
