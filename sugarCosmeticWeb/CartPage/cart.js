@@ -70,7 +70,8 @@ totalPaybleAmount = shipingCharge + cartSubtotal - discount;
 document.getElementById("da").innerText = "Rs." + " " + discount;
 document.getElementById("sc").innerText = "Rs." + " " + shipingCharge;
 document.getElementById("cst").innerText = "Rs." + " " + cartSubtotal;
-document.querySelector("#priceDisplay").innerText = totalPaybleAmount;
+let priceDisplayed = document.querySelector("#priceDisplay");
+priceDisplayed.innerText = totalPaybleAmount;
 document.getElementById("ap").innerText = "Rs." + " " + totalPaybleAmount;
 
 // calculating the discount through promo
@@ -92,4 +93,10 @@ document.querySelector("#apply").addEventListener("click", function () {
 
 document.querySelector("#gotoHome").addEventListener("click", function () {
   window.location.href = "../index.html";
+});
+
+// creating the gateway of payments
+document.getElementById("paylast").addEventListener("click", function () {
+  let total = priceDisplayed.innerText;
+  localStorage.setItem("totalPayment", total);
 });
