@@ -646,3 +646,360 @@ box3.addEventListener("mouseout", function(){
     btn5_1.innerText="";
     btn5_2.innerText="";
 })
+// slidingImage6
+let btn6_1=document.createElement("button");
+let btn6_2=document.createElement("button");
+let arr9=[
+    {photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/399160329-9-to-5-makeup-kit-wbg-01.jpg?v=1654013564",
+des:"9 TO 5 MAKEUP KIT",
+price: "₹ 999 (25% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/2_d5e8f5f6-db6f-43d4-a1ac-1da7b22fdc1b.jpg?v=1652943021",
+des:"THE MOST ELIGIBLUR CORRECTING PRIMER",
+price: "₹ 799",
+btn: "SELECT SHADE"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771",
+des:"BLING LEADER ILLUMINATING SUNSCREEN SPF35 PA***",
+price: "₹ 599",
+btn: "SELECT SHADE"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/382512089-mettle-priming-balm-01.jpg?v=1648654861",
+des:"METTLE PRIMING BALM",
+price: "₹ 1099",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_9909d205-c5f9-476d-9903-c4beffbfebb7.jpg?v=1637068160",
+des:"ARCH ARRIYAL BROW PEN",
+price: "₹ 499",
+btn: "SELECT SHADE"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Launch---Sweat-No-More-Makeup-Kit---WBG-Images_11.jpg?v=1653494527",
+des:"SWEAT NO MORE MAKEUP KIT",
+price: "₹ 2699 (28% Off)",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6a5fa1af-0d0e-4e9e-85d1-579495fb5030.jpg?v=1648482145",
+des:"ARCH ARRIVAL MICRO BROW PENCIL",
+price: "₹ 499",
+btn: "SELECT SHADES"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/383779802-summer-makeup-kit-wbg-images.jpg?v=1649087039",
+des:"SUMMER MAKEUP KIT",
+price: "₹ 1799",
+btn: "CHOOSE PRODUCTS"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/373532210-artboard-1.jpg?v=1646149967",
+des:"CITRUS GOT REAL RETINOL BRIGHTENING SERUM",
+price: "₹ 499",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/373515742-01.jpg?v=1646235720",
+des:"CITRU GOT REAL BRIGHTENING PEEL",
+price: "₹ 599",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Coffee-culture-hydrating-mist-01.jpg?v=1644312897",
+des:"COFFEE CULTURE HYDRATING MIST",
+price: "₹ 499",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_1bde8549-cb5e-40e8-8779-83e8c0aae451.jpg?v=1638445456",
+des:"TWO GOOD TO BE TRUE DUAL EYESHADOW",
+price: "₹ 499",
+btn: "SELECT SHADES"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Coffee-culture-hydrating-mist-01.jpg?v=1644312897",
+des:"COFFEE CULTURE HYDRATING MIST",
+price: "₹ 499",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_7863c610-04ae-4e21-a5bb-55577898284a.jpg?v=1637336891",
+des:"OWN THE LIGHT LIQUID HIGHLIGHTER",
+price: "₹ 649",
+btn: "SELECT SHADE"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Double-Date-Extreme-Volume-Mascara-Powered-by-Images-1025x1400-1.jpg?v=1636386431",
+des:"DOUBLE DATE EXTREME YOLUME MASCARA DUO - O1 BLACK JACK",
+price: "₹ 799",
+btn: "ADD TO CART"},
+];
+let go4=0;
+let back4=0;
+let box4=document.querySelector("#slidingImage6");
+box4.addEventListener("mouseover", function(){
+    btn6_1.innerText="<";
+    btn6_2.innerText=">";
+    btn6_1.style.height="70px";
+    btn6_1.style.width="30px";
+    btn6_2.style.height="70px";
+    btn6_2.style.width="30px";
+    btn6_1.style.position="absolute";
+    
+    btn6_2.style.marginTop="120px";
+    btn6_1.style.top="120px";
+    
+    btn6_1.style.left="20px";
+    btn6_1.style.backgroundColor="white";
+    btn6_2.style.backgroundColor="white";
+    btn6_1.style.border="1px solid black";
+    btn6_2.style.border="1px solid black";
+    box4.append(btn6_1,btn6_2);
+    btn6_1.addEventListener("click", function(){
+    
+        if(back4<3){
+            back4=11;
+        }
+        else{
+            back4=back4-4;
+        }
+        go4=back4;
+        document.querySelector("#D1>img").src=arr9[back4].photo;
+        document.querySelector("#D1>h4").innerText=arr9[back4].des;
+        document.querySelector("#des6-1").innerText=arr9[back4].price;
+        document.querySelector("#btn6-1").innerText=arr9[back4].btn;
+        document.querySelector("#D2>img").src=arr9[back4-1].photo;
+        document.querySelector("#D2>h4").innerText=arr9[back4-1].des;
+        document.querySelector("#des6-2").innerText=arr9[back4-1].price;
+        document.querySelector("#btn6-2").innerText=arr9[back4-1].btn;
+        document.querySelector("#D3>img").src=arr9[back4-2].photo;
+        document.querySelector("#D3>h4").innerText=arr9[back4-2].des;
+        document.querySelector("#des6-3").innerText=arr9[back4-2].price;
+        document.querySelector("#btn6-3").innerText=arr9[back4-2].btn;
+        document.querySelector("#D4>img").src=arr9[back4-3].photo;
+        document.querySelector("#D4>h4").innerText=arr9[back4-3].des;
+        document.querySelector("#des6-4").innerText=arr9[back4-3].price;
+        document.querySelector("#btn6-4").innerText=arr9[back4-3].btn;
+    })
+    btn6_2.addEventListener("click", function(){
+    
+        if(go4>8){
+            go4=0;
+        }
+        else{
+            go4=go4+3;
+        }
+        back4=go4;
+        document.querySelector("#D1>img").src=arr9[go4].photo;
+        document.querySelector("#D1>h4").innerText=arr9[go4].des;
+        document.querySelector("#des6-1").innerText=arr9[go4].price;
+        document.querySelector("#btn6-1").innerText=arr9[go4].btn;
+        document.querySelector("#D2>img").src=arr9[go4+1].photo;
+        document.querySelector("#D2>h4").innerText=arr9[go4+1].des;
+        document.querySelector("#des6-2").innerText=arr9[go4+1].price;
+        document.querySelector("#btn6-2").innerText=arr9[go4+1].btn;
+        document.querySelector("#D3>img").src=arr9[go4+2].photo;
+        document.querySelector("#D3>h4").innerText=arr9[go4+2].des;
+        document.querySelector("#des6-3").innerText=arr9[go4+2].price;
+        document.querySelector("#btn6-3").innerText=arr9[go4+2].btn;
+        document.querySelector("#D4>img").src=arr9[go4+3].photo;
+        document.querySelector("#D4>h4").innerText=arr9[go4+3].des;
+        document.querySelector("#des6-4").innerText=arr9[go4+3].price;
+        document.querySelector("#btn6-4").innerText=arr9[go4+3].btn;
+    })
+})
+box4.addEventListener("mouseout", function(){
+    btn6_1.style.backgroundColor="transparent";
+    
+    btn6_2.style.backgroundColor="transparent";
+    btn6_1.style.border="none";
+    btn6_2.style.border="none";
+    btn6_1.innerText="";
+    btn6_2.innerText="";
+})
+
+// id="slidingImage7"
+let img7=document.querySelectorAll("#slidingImage7>div>img");
+let buttons7=document.querySelectorAll("#slidingImage7>button");
+let forward7=0;
+let backward7=0;
+let arr10=[ "https://d32baadbbpueqt.cloudfront.net/Homepage/b9a64f84-817c-4984-a9e3-a75ec31843e4.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/47cd2c21-b320-4473-8fdc-9eb49ddefdda.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/f41ec860-3e9d-46b1-8c48-8ad7feb8d9e8.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/5959a7b1-efdd-4fce-812a-c6a940fcdcd9.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/b9a64f84-817c-4984-a9e3-a75ec31843e4.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/47cd2c21-b320-4473-8fdc-9eb49ddefdda.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/47cd2c21-b320-4473-8fdc-9eb49ddefdda.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/f41ec860-3e9d-46b1-8c48-8ad7feb8d9e8.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/5959a7b1-efdd-4fce-812a-c6a940fcdcd9.jpg"];
+buttons7[0].addEventListener("click", function(){
+    
+    if(forward7>5){
+        forward7=0;
+    }
+    else{
+        forward7=forward7+3;
+    }
+    backward7=forward7;
+    img7[0].src=arr10[forward7];
+    img7[1].src=arr10[forward7+1];
+    img7[2].src=arr10[forward7+2];
+})
+buttons7[1].addEventListener("click", function(){
+    
+    if(backward7<=3){
+        backward7=6;
+    }
+    else{
+        backward7=backward7-3;
+        
+    }
+    forward7=backward7;
+    img7[0].src=arr10[backward7];
+    img7[1].src=arr10[backward7-1];
+    img7[2].src=arr10[backward7-2];
+    console.log(backward7)
+})
+
+// slidingImage8
+let btn8_1=document.createElement("button");
+let btn8_2=document.createElement("button");
+let arr11=[
+    {photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Coffee-culture-cleansing-balm-stick-01.jpg?v=1643375708",
+des:"COFFEE CULTURE CLEANSING BALM STICK",
+price: "₹ 699",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Hyaluronic-Serum-3_1.jpg?v=1626423730",
+des:"AQUAHOLIC HYALURONIC SERUM",
+price: "₹ 499",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771",
+des:"BLING LEADER ILLUMINATING SUNSCREEN SPF35 PA**",
+price: "₹ 599",
+btn: "SELECT SHADE"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Hydrating-Primer-3.jpg?v=1626423647",
+des:"AQUAHOLIC HYDRATING PRIMER",
+price: "₹ 699",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_3cb613fc-43c8-4763-b3e6-5ccf4761c0d5.jpg?v=1641570994",
+des:"POWER CLAY MASK STICK",
+price: "₹ 699",
+btn: "SELECT SHADE"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Instant-Pore-Cleansing-Mask-1_1.jpg?v=1626423690",
+des:"AQUAHOLIC INSTANT PORE CLEANSING MASK",
+price: "₹ 499",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/CCEyeFirmingCreamWBG-3.jpg?v=1628610287",
+des:"COFFEE CULTURE EYE FIRMING CREAM",
+price: "₹ 399",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-clarifying-mask-12775754203219.jpg?v=1619113702",
+des:"CHEAT SWEET CLARIFYING MASK",
+price: "₹ 99",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-clarifying-mask-12775754203219.jpg?v=1619113702",
+des:"CHEAT SWEET CLARIFYING MASK",
+price: "₹ 99",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Hyaluronic-Serum-3_1.jpg?v=1626423730",
+des:"AQUAHOLIC HYALURONIC SERUM",
+price: "₹ 499",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/Coffee-culture-cleansing-balm-stick-01.jpg?v=1643375708",
+des:"COFFEE CULTURE CLEANSING BALM STICK",
+price: "₹ 699",
+btn: "ADD TO CART"},
+{photo:"https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-clarifying-mask-12775754203219.jpg?v=1619113702",
+des:"CHEAT SWEET CLARIFYING MASK",
+price: "₹ 99",
+btn: "ADD TO CART"}
+];
+let go5=0;
+let back5=0;
+let box5=document.querySelector("#slidingImage8");
+box5.addEventListener("mouseover", function(){
+    btn8_1.innerText="<";
+    btn8_2.innerText=">";
+    btn8_1.style.height="70px";
+    btn8_1.style.width="30px";
+    btn8_2.style.height="70px";
+    btn8_2.style.width="30px";
+    btn8_1.style.position="absolute";
+    
+    btn8_2.style.marginTop="120px";
+    btn8_1.style.top="120px";
+    
+    btn8_1.style.left="20px";
+    btn8_1.style.backgroundColor="white";
+    btn8_2.style.backgroundColor="white";
+    btn8_1.style.border="1px solid black";
+    btn8_2.style.border="1px solid black";
+    box5.append(btn8_1,btn8_2);
+    btn8_1.addEventListener("click", function(){
+    
+        if(back5<=3){
+            back5=11;
+        }
+        else{
+            back5=back5-4;
+        }
+        go5=back5;
+        document.querySelector("#E1>img").src=arr11[back5].photo;
+        document.querySelector("#E1>h4").innerText=arr11[back5].des;
+        document.querySelector("#des8-1").innerText=arr11[back5].price;
+        document.querySelector("#btn8-1").innerText=arr11[back5].btn;
+        document.querySelector("#E2>img").src=arr11[back5-1].photo;
+        document.querySelector("#E2>h4").innerText=arr11[back5-1].des;
+        document.querySelector("#des8-2").innerText=arr11[back5-1].price;
+        document.querySelector("#btn8-2").innerText=arr11[back5-1].btn;
+        document.querySelector("#E3>img").src=arr11[back5-2].photo;
+        document.querySelector("#E3>h4").innerText=arr11[back5-2].des;
+        document.querySelector("#des8-3").innerText=arr11[back5-2].price;
+        document.querySelector("#btn8-3").innerText=arr11[back5-2].btn;
+        document.querySelector("#E4>img").src=arr11[back5-3].photo;
+        document.querySelector("#E4>h4").innerText=arr11[back5-3].des;
+        document.querySelector("#des8-4").innerText=arr11[back5-3].price;
+        document.querySelector("#btn8-4").innerText=arr11[back5-3].btn;
+    })
+    btn8_2.addEventListener("click", function(){
+    
+        if(go5>=8){
+            go5=0;
+        }
+        else{
+            go5=go5+4;
+        }
+        back5=go5;
+        document.querySelector("#E1>img").src=arr11[go5].photo;
+        document.querySelector("#E1>h4").innerText=arr11[go5].des;
+        document.querySelector("#des8-1").innerText=arr11[go5].price;
+        document.querySelector("#btn8-1").innerText=arr11[go5].btn;
+        document.querySelector("#E2>img").src=arr11[go5+1].photo;
+        document.querySelector("#E2>h4").innerText=arr11[go5+1].des;
+        document.querySelector("#des8-2").innerText=arr11[go5+1].price;
+        document.querySelector("#btn8-2").innerText=arr11[go5+1].btn;
+        document.querySelector("#E3>img").src=arr11[go5+2].photo;
+        document.querySelector("#E3>h4").innerText=arr11[go5+2].des;
+        document.querySelector("#des8-3").innerText=arr11[go5+2].price;
+        document.querySelector("#btn8-3").innerText=arr11[go5+2].btn;
+        document.querySelector("#E4>img").src=arr11[go5+3].photo;
+        document.querySelector("#E4>h4").innerText=arr11[go5+3].des;
+        document.querySelector("#des8-4").innerText=arr11[go5+3].price;
+        document.querySelector("#btn8-4").innerText=arr11[go5+3].btn;
+    })
+})
+box5.addEventListener("mouseout", function(){
+    btn8_1.style.backgroundColor="transparent";
+    
+    btn8_2.style.backgroundColor="transparent";
+    btn8_1.style.border="none";
+    btn8_2.style.border="none";
+    btn8_1.innerText="";
+    btn8_2.innerText="";
+})
+
+// Bottom/id="image"
+bot=["https://d32baadbbpueqt.cloudfront.net/Homepage/f6d29c12-e7cf-476e-a654-b6697e0fa8de.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/7b184616-6420-4992-ac33-23feeb482956.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/60cfcab0-427f-4748-8c44-5bae2bbfa3a4.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/4188e9cd-11e4-452e-bec3-577894e7ec81.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/46e14c59-119d-4c5b-8055-819d8bf35e06.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/10374315-c48d-47b0-bb86-3374a2dde76b.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/eb4002ec-c165-4aaf-90b3-f813484fae25.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/eb4002ec-c165-4aaf-90b3-f813484fae25.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/f6d29c12-e7cf-476e-a654-b6697e0fa8de.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/7b184616-6420-4992-ac33-23feeb482956.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/60cfcab0-427f-4748-8c44-5bae2bbfa3a4.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/4188e9cd-11e4-452e-bec3-577894e7ec81.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/4188e9cd-11e4-452e-bec3-577894e7ec81.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/46e14c59-119d-4c5b-8055-819d8bf35e06.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/10374315-c48d-47b0-bb86-3374a2dde76b.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/eb4002ec-c165-4aaf-90b3-f813484fae25.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/f6d29c12-e7cf-476e-a654-b6697e0fa8de.jpg", "https://d32baadbbpueqt.cloudfront.net/Homepage/7b184616-6420-4992-ac33-23feeb482956.jpg","https://d32baadbbpueqt.cloudfront.net/Homepage/4188e9cd-11e4-452e-bec3-577894e7ec81.jpg"]
+let img9=document.querySelectorAll("#image>div>img");
+let buttons9=document.querySelectorAll("#image>button");
+let forward9=0;
+let backward9=0;
+buttons9[0].addEventListener("click", function(){
+    
+    if(forward9>=15){
+        forward9=0;
+    }
+    else{
+        forward9=forward9+4;
+    }
+    backward9=forward9;
+    img9[0].src=bot[forward9];
+    img9[1].src=bot[forward9+1];
+    img9[2].src=bot[forward9+2];
+    img9[3].src=bot[forward9+3];
+    
+})
+buttons9[1].addEventListener("click", function(){
+    
+    if(backward9<=4){
+        backward9=16    ;
+    }
+    else{
+        backward9=backward9-4;
+        
+    }
+    forward9=backward9;
+    img9[0].src=bot[backward9];
+    img9[1].src=bot[backward9-1];
+    img9[2].src=bot[backward9-2];
+    img9[3].src=bot[backward9-3];
+})
