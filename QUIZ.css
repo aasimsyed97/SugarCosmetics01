@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;800&family=Quicksand:wght@300;400;500;600&family=Secular+One&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Spartan", sans-serif;
+    font-family: "Quicksand", sans-serif;
     color: white;
 }
 body{
@@ -82,7 +81,7 @@ button{
 
 #IconNavbar a>i:hover,
 #IconNavbar a.active {
-    color: #ce9c2f;
+    color: #A67352;
 }
 
 #BlogNavbar {
@@ -115,7 +114,7 @@ button{
 #BlogNavbar li a:hover,
 #BlogNavbar li a.active {
     color: black;
-    background-color: #ce9c2f;
+    background-color: #A67352;
 
 }
 
@@ -160,7 +159,7 @@ button{
     color: gray;
  }
  #category>span{
-    color: rgba(141, 104, 10, 0.904);
+    color: #A67352;
  }
 
 
@@ -176,12 +175,12 @@ button{
 #bannerBox .box>p{
     text-align: center ;
     padding: 10px 0;
-    color: goldenrod;
+    color: #A67352;
     font-size: 10px;
 }
 #bannerBox .box>p>i{
     font-size: 10px;
-    color: goldenrod;
+    color: #A67352;
 }
 #bannerBox .box>h2{
     text-align: center ;
@@ -212,11 +211,12 @@ button{
     padding: 10px 15px;
     margin: auto;
     margin-top: 20px;
-    background-color:goldenrod;
+    background-color:#A67352;
     color: white;
 }
-#bannerBox .box>button>i{
-    background-color:rgb(211, 152, 75);
+#bannerBox .box>button:hover{
+    background-color:#83614a;
+    color: rgb(216, 207, 207);
 }
 
 
@@ -230,6 +230,8 @@ button{
     height: 1100px;
     border: 1px solid transparent;
     justify-content: center;
+    position: sticky;
+    top: -550px;
 }
 
 
@@ -239,7 +241,7 @@ button{
     width: 90%;
     height: 50px;
     background-color: rgb(15, 15, 15);
-    border: 1px solid rgb(117, 99, 54);
+    border: 1px solid #A67352;
     margin-top: 5px;
 }
 
@@ -260,8 +262,33 @@ button{
      display: flex;
      justify-content: left;
      align-items: center;
-    border-bottom: 1px solid burlywood;  
+    border-bottom: 1px solid #A67352;  
 } 
+
+#BannerLInk div:nth-child(6){
+    padding-bottom: 25px;
+}
+#BannerLInk div:nth-child(2){
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    border-bottom:1px solid gray;   
+}
+#BannerLInk div:nth-child(8){
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    border-bottom:1px solid gray;   
+}
+#BannerLInk div:nth-child(2)>h3{
+    background-color: gray;
+    padding: 8px 5px; 
+}
+#BannerLInk div:nth-child(8)>h3{
+    background-color: gray;
+    padding: 8px 5px; 
+}
+  
   
 #BannerLInk div>h3{
     background-color: transparent;
@@ -289,7 +316,7 @@ button{
     background-color: white;
 }
 #payment .paymentGetway div:first-child{
-   border-bottom: 1px solid burlywood;
+   border-bottom: 1px solid #A67352;
    padding-bottom: 20px;
 }
 #payment .paymentGetway p{
@@ -352,6 +379,8 @@ button{
 }
 #foot .copy>div>ul>li{
     list-style: none;
+    display: inline;
+    padding: 0 15px;
     color: gray;
    font-size: 15px;
    font-weight: 400;
