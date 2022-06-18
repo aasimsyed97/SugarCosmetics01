@@ -1,0 +1,153 @@
+let trendingdata =[
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270",
+        name:"MATTE ATTACK TRANSFER PROOF LIPSTICK",
+        price:" Rs.699",
+        rating:" 4.7(428)",
+        category:"sugarmerchstation",
+        prodID:"1",
+    },
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116",
+        name: "AIR KISS POWDER LIPSTICK",
+        price:" Rs.499",
+        rating:" 4.7(53)",
+        category:"makeupkits",
+        prodID:"2",
+    },
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-13.jpg?v=1627659977",
+        name:"Blend Trend Dual Eyeshadow Brush - 413 Flat + Round Xl",
+        category:"makeupkits",
+        price:"Rs.599" ,
+        rating:"5(2)",
+        prodID:"25",
+    },
+     
+     {
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002",
+
+     name: "Blend Trend Face Brush - 006 highlighter",
+     category: "bestseller",
+     price:"Rs.399",
+     rating:"4.7(23)", 
+     prodID:"29",
+    },
+       {
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-052Kabuki.jpg?v=1627573664",
+
+     name: "Blend Trend Foundation Brush - 052 kabuki",
+     category:"makeupkits",
+     price:"Rs.399",
+     rating:"4.8(26)",
+     prodID:"30", 
+    },
+       {
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
+
+     name: "Blend Trend Foundation Brush - 001 blush",
+     category: "bestseller",
+     price:"Rs.399",
+     rating:"4.9(15)",
+     prodID:"31",  
+    },
+        {
+     img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
+
+     name: "Blend Trend Foundation Brush - 007 powder",
+     category:"makeupkits",
+     price:"RS.399",
+     rating:"4.9(24)", 
+     prodID:"32", 
+    },
+    {
+        img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-daily-moisturizer-28038347292755.jpg?v=1619155748",
+        name: "CITRUS GOT REAL DAILY MOISTURIZER",
+        price: "Rs.499",
+        rating: 4.9
+    },
+    {
+        img: "https://cdn.shopify.com/s/files/1/0906/2558/products/Instant-Pore-Cleansing-Mask-1_1.jpg?v=1626423690",
+        name: "AQUAHOLIC INSTANT PORE CLEANSING MASK",
+        price: "Rs.499",
+        rating: 4.8
+    },
+    {
+        img: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771",
+        name: "BLING LEADER ILLUMINATING SUNSCREEN SPF35 P+++",
+        price: "Rs.599",
+        rating: 4.8
+    },
+         
+     {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-2-min.jpg?v=1627573652",
+        name:"Blend Trend Eyeshadow Brush - 041 Flat",
+        price: "RS.399",
+        catagory: "valueset",
+        rating:"5(3)",
+        prodID:"17",
+    },
+     {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-5-min.jpg?v=1627573639",
+        name:"Blend Trend Dual Eyeshadow Brush - 412 Flat + Round",
+        catagory: "sugarset",
+        price:"Rs.599" ,
+        rating:"5(2)",
+        prodID:"18",
+    },
+    //
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-052Kabuki.jpg?v=1627573664",
+   
+        name: "Blend Trend Foundation Brush - 052 kabuki",
+        category: "bestseller",
+        price:"RS.399",
+        rating:"4.8(26)", 
+        prodID:"19",
+       },
+          {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
+   
+        name: "Blend Trend Foundation Brush - 001 blush",
+         category:"sugarmerchstation",
+        price:"Rs399",
+        rating:"4.9(15)",
+        prodID:"20", 
+       },
+           {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
+   
+        name: "Blend Trend Foundation Brush - 007 powder",
+        category: "sugarset",
+        price:"Rs.399",
+        rating:"4.9(24)",
+        prodID:"21",
+        },
+         {
+               name: "MATTE AS HELL CRAYON LIPSTICK ",
+               price: " Rs.699",
+               rating: "4.8",
+               category:"sugarmerchstation", 
+               prodID:"22",
+               img: " https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1644394232 "
+           },
+           {
+           img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982",
+           name:"blend trend eyeshadow brush -043 - round xl",
+           category: "bestseller",
+           price: "Rs.399",
+           rating:"4.8(6)",
+           prodID:"23",
+       },
+        {
+           img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-3-min.jpg?v=1627573657",
+           name:"blend trend eyeshadow brush -042 - round",
+           category: "bestseller", 
+           price:"Rs.399",
+           rating:"4.4(5)",
+           prodID:"24",
+       },
+        
+      
+
+    ]
