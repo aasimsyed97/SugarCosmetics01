@@ -1,23 +1,8 @@
 "Team-Member"
 Jagatjit Barik  fw19_0711    jagatjit15
-Aasim.R. Syed	fw19_0690	 aasimsyed97				      
-Sunny Lalwani	fp04_424     
+Aasim.R. Syed	fw19_0690	     aasimsyed97				      
+Sunny Lalwani	fp04_424     sunnylalwani41
 Pardeep Singh	fw19_1049      deep1049
 Sunni Kumar	fw19_0799	      Sunnyarya01
 Gourav Lala	fp04_305  
 
-dummyData=[
-    { name:"Asim",
-    age:"24",
-     hobby: "reading",
-     degree:"BE" },
-     
-      { name:"Aadil",
-    age:"24",
-     hobby: "reading",
-     degree:"BE" },
-       { name:"hadi",
-    age:"24",
-     hobby: "reading",
-     degree:"BE" },
-]
