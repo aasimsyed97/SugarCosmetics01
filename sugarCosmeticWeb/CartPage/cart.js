@@ -89,3 +89,7 @@ document.querySelector("#apply").addEventListener("click", function () {
   document.getElementById("ap").innerText = "Rs." + " " + totalPaybleAmount;
   document.querySelector("#priceDisplay").innerText = totalPaybleAmount;
 });
+
+document.querySelector("#gotoHome").addEventListener("click", function () {
+  window.location.href = "../index.html";
+});
