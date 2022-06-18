@@ -1,0 +1,42 @@
+facebrusheItems = [
+    {
+     image:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-003Contour.jpg?v=1627659996",
+
+     name: "Blend Trend Face Brush - 003 Contour",
+
+     price:399,
+     rating:4.5(13) 
+    },
+     {
+     image:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002",
+
+     name: "Blend Trend Face Brush - 006 highlighter",
+
+     price:399,
+     rating:4.7(23) 
+    },
+       {
+     image:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-052Kabuki.jpg?v=1627573664",
+
+     name: "Blend Trend Foundation Brush - 052 kabuki",
+
+     price:399,
+     rating:4.8(26) 
+    },
+       {
+     image:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
+
+     name: "Blend Trend Foundation Brush - 001 blush",
+
+     price:399,
+     rating:4.9(15) 
+    },
+        {
+     image:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
+
+     name: "Blend Trend Foundation Brush - 007 powder",
+
+     price:399,
+     rating:4.9(24) 
+    },
+]
