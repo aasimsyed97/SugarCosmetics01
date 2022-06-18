@@ -301,15 +301,7 @@ let trendingdata =[
         rating:"4.9(15)",
         prodID:"31",  
        },
-           {
-        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
-   
-        name: "Blend Trend Foundation Brush - 007 powder",
-        category:"makeupkits",
-        price:"RS.399",
-        rating:"4.9(24)", 
-        prodID:"32", 
-       },
+          
       
 
     ]
