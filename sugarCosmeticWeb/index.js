@@ -103,7 +103,7 @@ if(localStorage.getItem("sign-in-data")){
         let obj={};
         button5.addEventListener("click", function(){
             
-            if(checkmob(telephone.value)){
+            if(checkmob(telephone.value) && otp1.value.length==1 && otp3.value.length==1 && otp2.value.length==1 && otp4.value.length==1){
                 
                 obj={
                     userMobile:telephone.value,
@@ -137,16 +137,17 @@ if(localStorage.getItem("sign-in-data")){
             }
         })
         function checkdata(tele, o1, o2, o3, o4){
+            
             let filtered2=data.filter(function(element){
                 return tele==element.userMobile && o1==element.userOtp1 && o2==element.userOTp2 && o3==element.userOtp3 && o4==element.userOtp4;
             })
-            if(filtered2.length>0){
+            if(filtered2.length>0 && o1.length==1 && o3.length==1 && o2.length==1 && o4.length==1){
                 return true;
             }
             return false;
         }
         function checkmob(tele){
-            if(tele==""){
+            if(tele=="" || tele.length<10){
                 return false;
             }
             let filtered=data.filter(function(elm){
