@@ -84,20 +84,20 @@ if(localStorage.getItem("sign-in-data")){
         let otp1=document.createElement("input");
         
         otp1.setAttribute("class", "otp");
-        otp1.setAttribute("type", "number");
+        otp1.setAttribute("type", "tel");
         otp1.setAttribute("maxlength", "1")
         let otp2=document.createElement("input");
         otp2.setAttribute("maxlength", "1")
         otp2.setAttribute("class", "otp");
-        otp2.setAttribute("type", "number");
+        otp2.setAttribute("type", "tel");
         let otp3=document.createElement("input");
         otp3.setAttribute("class", "otp");
-        otp3.setAttribute("type", "number");
+        otp3.setAttribute("type", "tel");
         otp3.setAttribute("maxlength", "1")
         let otp4=document.createElement("input");
         otp4.setAttribute("maxlength", "1")
         otp4.setAttribute("class", "otp");
-        otp4.setAttribute("type", "number");
+        otp4.setAttribute("type", "tel");
         let button5=document.createElement("button");
         button5.innerText="Verify OTP";
         let obj={};
