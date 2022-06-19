@@ -80,6 +80,7 @@ document.querySelector("#apply").addEventListener("click", function () {
   let promo = document.querySelector("input").value;
   if (promo === "team50" && cartSubtotal > 1500) {
     discount = cartSubtotal * 0.5;
+    console.log(promo, cartSubtotal, discount);
   } else if (promo === "team30" && cartSubtotal > 600) {
     discount = (cartSubtotal * 0.3).toFixed(2);
   } else {
