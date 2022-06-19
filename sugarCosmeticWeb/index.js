@@ -3,87 +3,190 @@ function myfunction(event){
     console.log(event.target.parentNode.remove())
 }
 //LoginPage
-document.querySelector("#login").addEventListener("click", function(){
-    let loginPage=document.createElement("div")
-    let loginSlide=document.createElement("div");
-    loginPage.style.width="50%";
-    loginPage.style.position="fixed";
-    loginPage.style.right="0px";
-    loginPage.style.top="0px";
-    loginSlide.setAttribute("id","loginPhoto");
-    loginPage.style.height="100%";
-    loginPage.style.zIndex="100";
-    loginPage.style.backgroundColor="red";
-    loginSlide.style.width="100%"
-    loginSlide.style.height="100%"
-    let cross1=document.createElement("i")
-    cross1.setAttribute("class", "fa-solid fa-xmark");
-    cross1.setAttribute("id", "cancel")
-    cross1.style.left="15px"
-    cross1.addEventListener("click", function(){
-        loginPage.remove();
-    })
-    let h2Txt=document.createElement("h2");
-    h2Txt.style.color="white";
-    h2Txt.innerText="Login/Sign Up";
-    h2Txt.style.position="absolute";
-    h2Txt.style.zIndex="1000";
-    h2Txt.style.top="40px";
-    h2Txt.style.left="15px";
-    container2=document.createElement("div");
-    container2.setAttribute("id", "loginbox")
-    let photo1=document.createElement("img");
-    photo1.setAttribute("src", "https://in.sugarcosmetics.com/smartphone.svg")
-    let pTAg=document.createElement("label");
-    pTAg.innerText="Login/Sign Up Using Phone";
-    let label=document.createElement("label");
-    label.innerHTML=`+91<input type="tel" required max="11"><button>Request OTP</button>`
-    let break1=document.createElement("br")
-    let small=document.createElement("p")
-    let otpEnter=document.createElement("p")
-    otpEnter.innerText="Enter the 4 digit OTP received on your phone.";
-    small.innerText="Enter your phone number to request an OTP";
-    let otp1=document.createElement("input");
-    otp1.setAttribute("class", "otp");
-    otp1.setAttribute("type", "number");
-    let otp2=document.createElement("input");
-    otp2.setAttribute("class", "otp");
-    otp2.setAttribute("type", "number");
-    let otp3=document.createElement("input");
-    otp3.setAttribute("class", "otp");
-    otp3.setAttribute("type", "number");
-    let otp4=document.createElement("input");
-    otp4.setAttribute("class", "otp");
-    otp4.setAttribute("type", "number");
-    let button5=document.createElement("button");
-    button5.innerText="Verify OTP";
-    let break2=document.createElement("br")
-    let break3=document.createElement("br");
-    let checkbox=document.createElement("input");
-    checkbox.setAttribute("type", "checkbox")
-    let matter=document.createElement("p");
-    matter.innerHTML=`Get Important Updates on Whatsapp.<a href="T-C.html"> <b>Terms and Conditions</b></a>`
-    let div=document.createElement("div");
-    div.append(checkbox,matter);
-    div.setAttribute("id", "T-C")
-    let h41=document.createElement("h4");
-    h41.innerText="Registering for this site allows you to access your order status and history. Just fill in the"
-    h41.setAttribute("id", "id1")
-    let h42=document.createElement("h4");
-    h42.setAttribute("id", "id2")
-    h42.innerText="fields below, and we'll get a new account set up for you in no time. We will only ask you";
-    let h43=document.createElement("h4");
-    h43.innerText="for information necessary to make the purchase process faster and easier."
-    h43.setAttribute("id", "id3")
-    let p=document.createElement("p");
-    p.setAttribute("id", "last1")
-    p.innerHTML=`By Signing up or logging in, you agree to our <a href="T-C.html"> <b>Terms and Conditions</b></a>`;
-    container2.append(photo1, pTAg,break1, label, small, otpEnter, otp1, otp2, otp3, otp4, break2, button5, break3, div)
-    loginPage.append(h2Txt,container2, h41, h42, h43, p, loginSlide,cross1,)
-    document.querySelector("body").append(loginPage);
-    
-});
+if(localStorage.getItem("sign-in-data")){
+    document.querySelector("#login").innerText="";
+    let sel=document.createElement("select");
+    sel.style.fontSize="20px"
+    let option1=document.createElement("option");
+    option1.innerText="Hi User!";
+    let option2=document.createElement("option");
+    option2.setAttribute("value", "signOut");
+    option2.innerText="Sign Out";
+    sel.append(option1,option2);
+    document.querySelector("#login").append(sel);
+    sel.addEventListener("change", function(){
+    if(sel.value=="signOut"){
+        localStorage.removeItem("sign-in-data");
+        alert("User Successfully Sign Out");
+        window.location.reload();
+    }
+})
+}else{
+    let data=JSON.parse(localStorage.getItem("loginData")) || [];
+    console.log(data)
+    document.querySelector("#login").addEventListener("click", function(){
+        let loginPage=document.createElement("div")
+        let loginSlide=document.createElement("div");
+        loginPage.style.width="50%";
+        loginPage.style.position="fixed";
+        loginPage.style.right="0px";
+        loginPage.style.top="0px";
+        loginSlide.setAttribute("id","loginPhoto");
+        loginPage.style.height="100%";
+        loginPage.style.zIndex="100";
+        loginPage.style.backgroundColor="red";
+        loginSlide.style.width="100%"
+        loginSlide.style.height="100%"
+        let cross1=document.createElement("i")
+        cross1.setAttribute("class", "fa-solid fa-xmark");
+        cross1.setAttribute("id", "cancel")
+        cross1.style.left="15px"
+        cross1.addEventListener("click", function(){
+            loginPage.remove();
+        })
+        let h2Txt=document.createElement("h2");
+        h2Txt.style.color="white";
+        h2Txt.innerText="Login/Sign Up";
+        h2Txt.style.position="absolute";
+        h2Txt.style.zIndex="1000";
+        h2Txt.style.top="40px";
+        h2Txt.style.left="15px";
+        container2=document.createElement("div");
+        container2.setAttribute("id", "loginbox")
+        let photo1=document.createElement("img");
+        photo1.setAttribute("src", "https://in.sugarcosmetics.com/smartphone.svg")
+        let pTAg=document.createElement("label");
+        pTAg.innerText="Login/Sign Up Using Phone";
+        let label=document.createElement("label");
+        label.innerHTML="+91"
+        let telephone=document.createElement("input");
+        telephone.setAttribute("type", "tel");
+        telephone.setAttribute("maxlength", "10")
+        otprequest=document.createElement("button");
+        otprequest.innerText="Request OTP"
+        label.append(telephone, otprequest);
+        otprequest.addEventListener("click", function(){
+            if(telephone.value.length==10){
+                alert("Please Enter the OTP")
+            }
+            else{
+                alert("Invalid Contact No.")
+            }
+        })
+        
+            
+        
+        let break1=document.createElement("br")
+        let small=document.createElement("p")
+        let otpEnter=document.createElement("p")
+        otpEnter.innerText="Enter the 4 digit OTP received on your phone.";
+        small.innerText="Enter your phone number to request an OTP";
+        let otp1=document.createElement("input");
+        
+        otp1.setAttribute("class", "otp");
+        otp1.setAttribute("type", "tel");
+        otp1.setAttribute("maxlength", "1")
+        let otp2=document.createElement("input");
+        otp2.setAttribute("maxlength", "1")
+        otp2.setAttribute("class", "otp");
+        otp2.setAttribute("type", "tel");
+        let otp3=document.createElement("input");
+        otp3.setAttribute("class", "otp");
+        otp3.setAttribute("type", "tel");
+        otp3.setAttribute("maxlength", "1")
+        let otp4=document.createElement("input");
+        otp4.setAttribute("maxlength", "1")
+        otp4.setAttribute("class", "otp");
+        otp4.setAttribute("type", "tel");
+        let button5=document.createElement("button");
+        button5.innerText="Verify OTP";
+        let obj={};
+        button5.addEventListener("click", function(){
+            
+            if(checkmob(telephone.value) && otp1.value.length==1 && otp3.value.length==1 && otp2.value.length==1 && otp4.value.length==1){
+                
+                obj={
+                    userMobile:telephone.value,
+                    userOtp1: otp1.value,
+                    userOTp2: otp2.value,
+                    userOtp3: otp3.value,
+                    userOtp4: otp4.value,
+                }
+                data.push(obj);
+                localStorage.setItem("loginData", JSON.stringify(data));
+                localStorage.setItem("sign-in-data", JSON.stringify(obj));
+                alert("User registration successfully")
+                window.location.reload();
+            }
+            else{
+                if(checkdata(telephone.value, otp1.value, otp2.value, otp3.value, otp4.value)){
+                    obj={
+                        userMobile:telephone.value,
+                        userOtp1: otp1.value,
+                        userOtp3: otp3.value,
+                        userOtp4: otp4.value,
+                        userOtp2: otp2.value,
+                    }
+                    localStorage.setItem("sign-in-data", JSON.stringify(obj));
+                    alert("User login successfully");
+                    window.location.reload();
+                }
+                else{
+                    alert("Invalid User login detail");
+                }
+            }
+        })
+        function checkdata(tele, o1, o2, o3, o4){
+            
+            let filtered2=data.filter(function(element){
+                return tele==element.userMobile && o1==element.userOtp1 && o2==element.userOTp2 && o3==element.userOtp3 && o4==element.userOtp4;
+            })
+            if(filtered2.length>0 && o1.length==1 && o3.length==1 && o2.length==1 && o4.length==1){
+                return true;
+            }
+            return false;
+        }
+        function checkmob(tele){
+            if(tele=="" || tele.length<10){
+                return false;
+            }
+            let filtered=data.filter(function(elm){
+                return elm.userMobile==tele;
+            })
+            if(filtered.length>0){
+                return false
+            }
+            return true
+        }
 
+
+        let break2=document.createElement("br")
+        let break3=document.createElement("br");
+        let checkbox=document.createElement("input");
+        checkbox.setAttribute("type", "checkbox")
+        let matter=document.createElement("p");
+        matter.innerHTML=`Get Important Updates on Whatsapp.<a href="T-C.html"> <b>Terms and Conditions</b></a>`
+        let div=document.createElement("div");
+        div.append(checkbox,matter);
+        div.setAttribute("id", "T-C")
+        let h41=document.createElement("h4");
+        h41.innerText="Registering for this site allows you to access your order status and history. Just fill in the"
+        h41.setAttribute("id", "id1")
+        let h42=document.createElement("h4");
+        h42.setAttribute("id", "id2")
+        h42.innerText="fields below, and we'll get a new account set up for you in no time. We will only ask you";
+        let h43=document.createElement("h4");
+        h43.innerText="for information necessary to make the purchase process faster and easier."
+        h43.setAttribute("id", "id3")
+        let p=document.createElement("p");
+        p.setAttribute("id", "last1")
+        p.innerHTML=`By Signing up or logging in, you agree to our <a href="T-C.html"> <b>Terms and Conditions</b></a>`;
+        container2.append(photo1, pTAg,break1, label, small, otpEnter, otp1, otp2, otp3, otp4, break2, button5, break3, div)
+        loginPage.append(h2Txt,container2, h41, h42, h43, p, loginSlide,cross1,)
+        document.querySelector("body").append(loginPage);
+        
+    });
+}
 // displayImage
 let img1=document.querySelector("#displayImage>img");
 let buttons=document.querySelectorAll("#displayImage>button")
@@ -1002,4 +1105,27 @@ buttons9[1].addEventListener("click", function(){
     img9[1].src=bot[backward9-1];
     img9[2].src=bot[backward9-2];
     img9[3].src=bot[backward9-3];
+})
+let bott=document.querySelector("#bott>div");
+
+bott.addEventListener("click", function(){
+    document.querySelector("#bottomMatter").innerHTML=""
+    let txt1=document.querySelector("p");
+
+    
+    bott.style.backgroundColor="rgb(68,66,66)";
+    bott.style.color="white";
+    txt1.innerHTML=`Enhance your beauty looks with SUGAR COSMETICS<br>Your search for a makeup and beauty range thats cruelty-free, high on style, and even higher on performance ends here at SUGAR Cosmetics! SUGAR makeup stands for striking formulas that perfectly suit every Indian skin tone, extremely rich colour payoff, along with a unique and incredible range of products that stand the test of time. This hugely popular range of premium colour cosmetics and beauty products are crafted in state-of-the-art facilities across Germany, Italy, India, USA, and Korea. The clutter-breaking 450+ makeup products are skillfully wrapped in a signature low-poly mosaic designed packaging that is bursting with colour and is sure to complement the sweet and sassy side of you.<br>The chart-topping makeup & beauty range is spread across categories like Lip makeup, Eye makeup, Face makeup, Nail paints and Skin care. The best-selling beauty products in India extend from the long lasting lipsticks to creamy lip crayons, lip primers to eyebrow definers, foundation stick with an inbuilt brush to cushion BB compacts, setting mist to makeup cleansing water. SUGAR has pioneered the trend shift towards “mattes'' with its cult-favourite range of Matte Liquid Lipsticks and equally popular Matte Eyeliners. Some of the recent innovations like the ultra-luxe range of lipsticks called Mettle, Jelly Highlighters, a range of face makeup including colour correctors, highlighters, bronzers and blushes in a stick format, have created waves in the makeup market. Say hello to SUGAR’s newest skincare category with our range of Sheet Masks, Clay Masks, Eye Creams and a ground-breaking hyaluronic acid and Vitamin C skincare range and so much more.<br>So get ready to dive into the world of SUGAR Cosmetics and rule the world, one look at a time!<br>Look your glamorous best with Exclusive SUGAR Makeup Collection!<br>Whether you are a makeup connoisseur or a budding enthusiast, it is easy to be overwhelmed in the sea of beauty products in India. But with SUGAR Cosmetics, you can put your search for the perfect makeup collection to rest. Since its inception, SUGAR has been working with an aim to create a high-quality yet affordable range of products to complement the iconic Indian beauty. Not only that, you can shop for all these cosmetics online without going through a tiring process of finding a cosmetic store that will cater to your needs.<br> Makeup is not just a necessity; its a statement that says we are beautiful, but a dash of lipstick every once in a while makes us feel sexy. SUGAR Cosmetics truly keeps up to our promise to have your back to make heads turn wherever you go. Make sure you own a beauty kit with products that are exclusively created and recommended for you by beauty experts, but most of all own a makeup that makes you feel confident in your own skin. Your selection of cosmetics to build your makeup stash, is sure to provide you with an ensemble that is on-trend and a reflection of you and your style. This makeup collection is everything you need to look stunning while youre on the go and you might just fall in love with yourself all over again.<br>How to Choose the Right Makeup & Cosmetics?`;
+    document.querySelector("#bottomMatter").append(txt1);  
+    
+})
+document.querySelector("#span").addEventListener("click", function(){
+    
+    let pTag=document.createElement("p");
+    pTag.innerHTML=""
+    pTag.innerText="Sucessfully subscribed to Newsletter";
+    pTag.style.color="#6F8989"
+    console.log("i")
+    document.querySelector("#sub_email").append(pTag);
+    
 })
