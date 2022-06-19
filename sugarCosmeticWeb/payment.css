@@ -1,0 +1,155 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    color: gray;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+#sucessfull{
+    width: 50%;
+    border: 1px solid transparent;
+    margin: auto;
+}
+#sucessfull img{
+    display: block;
+    width: 70%;
+    border: 1px solid transparent;
+    margin: auto;
+}
+#sucessfull p{
+    text-align: center;
+    font-size: xx-large;
+}
+#sucessfull button{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    border: none;
+    background-color: pink;
+    color: rgb(65, 64, 64);
+    padding: 20px 30px;
+    border-radius: 115px;
+    font-weight: 900;
+}
+#sucessfull button:hover{
+    background-color: yellowgreen;
+}
+#sucessfull a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    border: 1px solid transparent;
+    margin: auto;
+}
+#payment{
+    width: 50%;
+    /* height: auto; */
+    border: 1px solid transparent;
+    /* margin: auto; */
+    padding: 20px 10px;
+}
+#payment>h2{
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+#main{  
+    border: 1px solid transparent;
+    transition: 0.2s ease-out;
+}
+#main>div{
+    margin-top: 20px;
+    padding: 10px 0;
+    text-align: left;
+    display: flex;
+    border-left:  1px solid rgb(231, 226, 226);;
+    border-bottom: 1px solid rgb(231, 226, 226);
+    padding-left: 20px;
+    align-items: center;
+}
+#main>div:hover{
+    padding: 10px 0px;
+    text-align: left;
+    display: flex;
+    background-color: rgb(250, 250, 250);
+    border-left: 1px solid rgb(61, 60, 60);;
+    border-bottom: 1px solid rgb(61, 60, 60);
+    padding-left: 20px;
+    align-items: center;
+}
+#main>div>img{
+    width: 6%;
+}
+#main>div>p{
+    padding-left: 30px;
+
+}
+
+
+
+#pay{
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 130px;
+    background-color: rgb(22, 21, 21);
+    color: white;
+    border: 0px;
+}
+
+#payment button{
+    font-size: 15px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 130px;
+    border: 0px;
+    background-color: rgb(223, 154, 154);
+    color: rgb(70, 3, 3);
+    transition: 0.3s ease-in;
+}
+#payment button:hover{
+    background-color: rgb(228, 233, 166);;
+    color: rgb(44, 44, 39);
+}
+
+
+
+
+#getway{
+    width: 50%;
+    border: 1px solid transparent;
+}
+#getway input{
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+    display: block;
+    padding: 20px 30px ;
+}
+#getway button{
+    margin-left: 60%;
+    margin-top: 20px;
+    width: 30%;
+    display: block;
+    padding: 20px 30px ;
+}
