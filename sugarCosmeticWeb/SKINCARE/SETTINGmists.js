@@ -2,13 +2,13 @@ SkinCareProducts = [
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-refreshing-mist-28037990842451.jpg?v=1619155739",
         name: "CITRUS GOR REAL REFRESHING MIST",
-        price: "499",
+        price: 499,
         rating: 4.8
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/Aquaholic-Pore-Exfoliating-Scrub-3_1.jpg?v=1626363966",
         name: "COFFEE CULTURE HYDRATING MIST",
-        price: "499",
+        price: 499,
         rating: 5
     },
     

@@ -2,13 +2,13 @@ SkinCareProducts = [
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-anti-aging-mask-12775753744467.jpg?v=1619113715",
         name: "CHEAT SHEET ANTI-AGING MASK",
-        price:"99,
+        price:99,
         rating: 4.8
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-clarifying-mask-12775754203219.jpg?v=1619113702",
         name: "CHEAT SHEET CLARIFYING MASK",
-        price:"99,
+        price:99,
         rating: 4.9
     },
     {
