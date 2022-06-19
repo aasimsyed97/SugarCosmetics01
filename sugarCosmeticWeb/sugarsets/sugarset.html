@@ -10,10 +10,89 @@
     <!-- Font awesome file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
     <title>Sugarset</title>
 </head>
 
 <body>
+    <!-- navbar part start -->
+    <div id="navbar">
+        <div id="searchBar">
+            <img id="logo" src="https://in.sugarcosmetics.com/desc-images/pride-logo-option.gif" alt="" />
+            <div>
+                <input type="text" placeholder="Try Liquid Lipstick" />
+                <label>Search</label>
+            </div>
+
+            <div id="logcss">
+                <img src="data:image/png;base64,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"
+                    alt="" />
+                <p id="login">Login/Register</p>
+               
+            </div>
+            <div>
+                <a href="../wishLisst/wishlist.html"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJhNuXyxJAA1r2bJb7EkdLNY6WOA80TLEY5A&usqp=CAU"
+                        alt="" /></a>
+                <a href="../CartPage/cat.html"> <img
+                        src="data:image/png;base64,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"
+                        alt="" /> </a>
+                <a href="https://in.sugarcosmetics.com/pages/offer"> <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT86hFk58VamDIWA33gse5XtHOtotbhW5Vyug&usqp=CAU"
+                        alt="" /></a>
+            </div>
+        </div>
+        <nav>
+            <div class="nav1">
+                <a href="../main makeup/makeup.html">MAKEUP</a>
+                <div class="dropdown1">
+                    <a href="../lips page/lipsMakeup.html">LIPS</a>
+                    <a href="../face page/faceMakeup.html">FACE</a>
+                    <a href="../eye page/eyeMakeup.html">EYES</a>
+                </div>
+            </div>
+            <div class="nav2">
+                <a href=".../brushMain/brushes.html">BRUSHES</a>
+                <div class="dropdown2">
+                    <a href="../facebrushes/facebrushes.html">FACE BRUSHES</a>
+                    <a href="../eyebrushes/eyebrushes.html">EYE BRUSHES</a>
+                </div>
+            </div>
+            <div class="nav3">
+                <a href="../SKINCARE/scincare.html">SKINCARE</a>
+                <div class="dropdown3">
+                    <a href="../SKINCARE/MOISTRIZERS.html">MOISTRIZERS</a>
+                    <a href="../SKINCARE/SUNSCREEN.html">SUNSCREEN</a>
+                    <a href="../SKINCARE/SETTINGmists.html">SETTING MISTS</a>
+                    <a href="../SKINCARE/cofeecultre.html">COFFEE CULTURE RANGE</a>
+                    <a href="../SKINCARE/sheetmask.html">SHEET MASK COMBO</a>
+                    <a href="../SKINCARE/citrus.html">CITRUS GOT REAL RANGE</a>
+                    <a href="../SKINCARE/aquaholic.html">AQUAHOLIC RANGE</a>
+                    <a href="../SKINCARE/masks.html">MASKS</a>
+                </div>
+            </div>
+            <div class="nav4">
+                <a href="../trending/trending.html">TRENDING</a>
+                <div class="dropdown4">
+                    <a href="../sugarmerchstation/sugarmerch.html">SUGAR MERCH <br> STATION</a>
+                    <a href="../makeupkits/makeup.html">MAKEUP KITS</a>
+                    <a href="../bestseller/bestseller.html">BESTSELLERS</a>
+                    <a href="../sugarsets/sugarset.html">SUGAR SETS</a>
+                    <a href="../valuesets/valuesets.html">VALUE SETS</a>
+                </div>
+            </div>
+            <div class="nav5">
+                <a href="#">BLOG</a>
+            </div>
+            <div class="nav6">
+                <a href="https://in.sugarcosmetics.com/pages/offer">OFFERS</a>
+            </div>
+            <div class="nav7">
+                <a href="https://in.sugarcosmetics.com/stores">STORES</a>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar part end  -->
     <div id="top">
         <div id="banner">
             <img src="https://d32baadbbpueqt.cloudfront.net/Collection/6a68d77f-80b5-4860-9a4d-6005844c937d.jpg">
