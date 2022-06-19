@@ -955,3 +955,17 @@ nav > div > div > a:hover {
 #card {
   cursor: pointer;
 }
+
+#id7{
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 100px;
+  display: grid;
+  align-items: center;
+}
+
+#id7>p>a>img{
+  width: 21px;
+  cursor: pointer;
+}
