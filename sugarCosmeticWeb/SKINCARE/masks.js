@@ -2,31 +2,31 @@ SkinCareProducts = [
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-anti-aging-mask-12775753744467.jpg?v=1619113715",
         name: "CHEAT SHEET ANTI-AGING MASK",
-        price: "99",
+        price:"99,
         rating: 4.8
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-clarifying-mask-12775754203219.jpg?v=1619113702",
         name: "CHEAT SHEET CLARIFYING MASK",
-        price: "99",
+        price:"99,
         rating: 4.9
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/Instant-Pore-Cleansing-Mask-1_1.jpg?v=1626423690",
         name: "AQUAHOLIC INSTANT PORE CLEANSING MASK",
-        price: "499",
+        price: 499,
         rating: 4.8
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-charcoal-patrol-bubble-mask-12775750500435.jpg?v=1644399394",
         name: "CHARCOAL PATROL BUBBLE MASK",
-        price: "149",
+        price: 149,
         rating: 4.9
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_3cb613fc-43c8-4763-b3e6-5ccf4761c0d5.jpg?v=1641570994",
         name: "POWDER CLAY MASK STICK",
-        price: "699",
+        price: 699,
         rating: 4.8
     },
     {
@@ -38,61 +38,61 @@ SkinCareProducts = [
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-swipe-right-cleansing-water-12771592732755.jpg?v=1619106450",
         name: "CHEAT SHEET CLARIFYING MASK (PACK OF 6)",
-        price: "449",
+        price: 449,
         rating: 4.7
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/Coffee-culture-hydrating-mist-01.jpg?v=1644312897",
         name: "CHEAT SHEET ANTI-AGING MASK (PACK OF 6)",
-        price: "449",
+        price: 449,
         rating: 4.9
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-anti-aging-mask-pack-of-6-12784629776467.jpg?v=1619114575",
         name: "CHARCOAL PATROL BUBBLE MASK (PACK OF 6)",
-        price: "699",
+        price: 699,
         rating: 5
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-charcoal-patrol-face-mask-12775752564819.jpg?v=1619113688",
         name: "CHARCOAL PATROL FACE MASK",
-        price: "99",
+        price:99,
         rating: 4.9
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-sugar-cheat-sheet-brightening-mask-12775754039379.jpg?v=1619113729",
         name: "SUGAR CHEAT SHEET BRIGHTENING MASK",
-        price: "149",
+        price: 149,
         rating: 4.8
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-sugar-cheat-sheet-pore-care-mask-12775754563667.jpg?v=1619113743",
         name: "SUGAR CHEAT SHEET PORE CARE MASK",
-        price: "149",
+        price: 149,
         rating: 4.9
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-pore-care-mask-pack-of-6-12784627187795.jpg?v=1619114552",
         name: "CHEAT SHEET PORE CARE MASK (PACK OF 6)",
-        price: "699",
+        price: 699,
         rating: 5
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-charcoal-patrol-face-mask-pack-of-6-12784634986579.jpg?v=1619114602",
         name: "CHARCOAL PATROL MASK (PACK OF 6)",
-        price: "449",
+        price: 449,
         rating: 5
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-power-clay-peel-off-mask-13470537646163.jpg?v=1619115274",
         name: "POWDER CLAY PEEL OF MASK",
-        price: "249",
+        price: 249,
         rating: 4.7
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-power-clay-3-min-pore-cleansing-mask-13470539645011.jpg?v=1619115283",
         name: "POWDER CLAY 3-MIN PORE CLEANING MASK",
-        price: "249",
+        price: 249,
         rating: 4.6
     },
     
