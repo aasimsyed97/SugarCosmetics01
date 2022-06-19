@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;800&family=Quicksand:wght@300;400;500;600&family=Secular+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+body {
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Quicksand", sans-serif;
+  background-color: #f5f5f5;
+}
+#navbar {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: #f5f5f5;
+  position: sticky;
+  top: 0px;
+  z-index: 100000;
+}
+#searchBar img {
+  height: 20px;
+}
+#searchBar > img:first-child {
+  height: 40px;
+}
+#searchBar > div > input {
+  display: block;
+  width: 510px;
+  padding: 10px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 30px 0px 0px 30px;
+}
+#searchBar > div > input + label {
+  width: 120px;
+  height: 40px;
+  border-radius: 0px 30px 30px 0px;
+  color: white;
+  background: #212529;
+  padding: 10px 30px;
+}
+#searchBar {
+  margin: 15px 0px;
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+}
+#searchBar > div {
+  display: flex;
+  align-items: center;
+}
+#searchBar > div > div {
+  display: flex;
+}
+#searchBar > div:nth-child(3) > p {
+  margin-left: 10px;
+  text-decoration: underline;
+  color: #44427b;
+}
+#searchBar > div:nth-child(4) > img {
+  margin-right: 10px;
+}
+#login {
+  cursor: pointer;
+}
+
+#loginPhoto {
+  background-image: url("https://in.sugarcosmetics.com/Login_bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px);
+}
+#loginbox {
+  width: 90%;
+  height: 440px;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  top: 90px;
+  left: 15px;
+  z-index: 100;
+  padding: 15px;
+}
+#loginbox > img {
+  width: 40px;
+
+  margin: 15px 0px 0px 0px;
+}
+#loginbox > label {
+  font-family: Quicksand;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 25px 0px 20px 0px;
+  position: relative;
+  top: -10px;
+}
+#loginbox > label > input {
+  margin: 30px 20px;
+  width: 50%;
+  height: 30px;
+  font-size: 25px;
+}
+#loginbox > label > button {
+  width: 130px;
+  height: 35px;
+  background-color: #adadad;
+  color: white;
+}
+#loginbox > P:first-child {
+  font-size: 14px;
+  position: relative;
+  top: -20px;
+}
+#loginbox > p + p {
+  font-size: 14px;
+  margin-top: 70px;
+}
+.otp {
+  width: 40px;
+  height: 40px;
+  margin: 30px 0px 30px 10px;
+}
+#loginbox > button {
+  width: 130px;
+  height: 35px;
+  background-color: #adadad;
+  color: white;
+}
+nav {
+  display: flex;
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+nav a {
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: gray;
+  font-family: 13px Poppins;
+  font-weight: lighter;
+}
+nav > div > a:hover {
+  text-shadow: 1px 1px 2px #6c757d;
+}
+nav > div > div > a:hover {
+  color: black;
+  text-shadow: 1px 1px 2px #6c757d;
+}
+.dropdown1 {
+  display: none;
+}
+.dropdown1:hover {
+  display: block;
+}
+.nav1:hover .dropdown1 {
+  position: absolute;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 10%;
+  background-color: #fff;
+  padding: 20px 16px;
+  font-size: small;
+  top: 60%;
+}
+.dropdown2 {
+  display: none;
+}
+.dropdown2:hover {
+  display: block;
+}
+.nav2:hover .dropdown2 {
+  position: absolute;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 10%;
+  background-color: #fff;
+  padding: 20px 16px;
+  font-size: small;
+  top: 60%;
+}
+.dropdown3 {
+  display: none;
+}
+.dropdown3:hover {
+  display: block;
+}
+.nav3:hover .dropdown3 {
+  position: absolute;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 10%;
+  background-color: #fff;
+  padding: 20px 16px;
+  font-size: small;
+  top: 60%;
+}
+.dropdown4 {
+  display: none;
+}
+.dropdown4:hover {
+  display: block;
+}
+.nav4:hover .dropdown4 {
+  position: absolute;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 10%;
+  background-color: #fff;
+  padding: 20px 16px;
+  font-size: small;
+  top: 60%;
+}
+.dropdown5 {
+  display: none;
+}
+.dropdown5:hover {
+  display: block;
+}
+.nav5:hover .dropdown5 {
+  position: absolute;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 10%;
+  background-color: #fff;
+  padding: 20px 16px;
+  font-size: small;
+  top: 60%;
+}
+.sortdown,
+.filterdown {
+  color: gray;
+  font-family: 13px Poppins;
+  position: absolute;
+  display: none;
+}
+#Rel,
+#HtL,
+#LtH,
+#names {
+  background-color: white;
+  padding: 5px 15px;
+  border-top: 1px solid gray;
+  cursor: pointer;
+}
+.h {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+#Rel:hover,
+#names:hover,
+#LtH:hover,
+#HtL:hover {
+  background-color: #000;
+  color: white;
+}
+.sort:hover .sortdown,
+.filter:hover .filterdown {
+  display: block;
+}
+#card {
+  cursor: pointer;
+}
+#searchBar > div:nth-child(4) > a {
+  padding: 5px 5px;
+}
+/* ************************************** */
+/* Adding mediaquery to the css */
+
+@media all and (min-width: 750px) and (max-width: 1000px) {
+  #searchBar > div > input {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 30px 0px 0px 30px;
+  }
+  #searchBar > div > input + label {
+    width: 80px;
+    height: 30px;
+    border-radius: 0px 30px 30px 0px;
+    color: white;
+    background: #212529;
+    /* padding: 10px 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media all and (min-width: 250px) and (max-width: 749px) {
+  #searchBar > div:nth-child(2) {
+    display: none;
+  }
+  nav {
+    overflow: scroll;
+  }
+  #navbar {
+    width: 100vw;
+  }
+}

@@ -31,7 +31,7 @@ body {
   filter: blur(65px);
   position: absolute;
   background: url(" https://d32baadbbpueqt.cloudfront.net/Collection/39da2bc6-d83c-4350-a2b1-0c0ec7a721a8.jpg");
-  z-index: -1000;
+  z-index: -1;
 }
 #banner > img {
   width: 100%;
@@ -50,7 +50,7 @@ body {
   height: 100px;
   margin: auto;
   margin-top: 30px;
-  /* position: relative; */
+  position: relative;
 }
 #left {
   display: flex;
