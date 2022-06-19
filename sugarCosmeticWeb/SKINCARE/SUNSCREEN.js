@@ -44,12 +44,12 @@ function disPlay(a){
         const wl = document.createElement('div');
         wl.innerText = "🤍"
         wl.addEventListener("click", () => {
-            localStorage.setItem("watchlistItems",JSON.stringify(SkinCareProducts))
+            localStorage.setItem("wishList",JSON.stringify(SkinCareProducts))
         })
         const atc = document.createElement('div');
         atc.innerText = "Add to Cart"
         atc.addEventListener("click", () => {
-            localStorage.setItem("CartItems",JSON.stringify(SkinCareProducts))
+            localStorage.setItem("cartItems",JSON.stringify(SkinCareProducts))
         })
         hoverPart.style.display = "flex"
         hoverPart.style.justifyContent = "space-between"
