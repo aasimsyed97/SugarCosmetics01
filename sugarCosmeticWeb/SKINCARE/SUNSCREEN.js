@@ -2,25 +2,25 @@ SkinCareProducts = [
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771",
         name: "BLING LEADER ILLUMINATING SUNSCREEN SPF35 P+++",
-        price: "599",
+        price: 599,
         rating: 4.8
     },  
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-spf30-sunscreen-28038344736851.jpg?v=1619155723",
         name: "CITRUS GOT REAL SPF3O SUNSCREEN",
-        price: "399",
+        price: 399,
         rating: 4.7
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_547e9188-e44c-4cf7-a32e-fc0f410e8062.jpg?v=1651852720",
         name: "BLING LEADER ILLUMINATING SUNSCREEN SPF35 PA+++ -01 GOLD DIGGIN 50g",
-        price: "599",
+        price: 599,
         rating: 4.5
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_e5df3bb8-4439-4980-ada2-aa90b126ada3.jpg?v=1651852746",
         name: "BLING LEADER ILLUMINATING SUNSCREEN SPF35 PA+++ -02 PINK TRIPPIN 50g",
-        price: "599",
+        price: 599,
         rating: 3.0
     },
     
