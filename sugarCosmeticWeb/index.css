@@ -60,6 +60,7 @@
   left: 15px;
   z-index: 100;
   padding: 15px;
+  
 }
 #loginbox > img {
   width: 40px;
@@ -123,26 +124,29 @@
 #id1 {
   text-align: center;
   position: absolute;
-  bottom: 90px;
+  bottom: 80px;
   left: 15px;
   z-index: 100;
   margin: 10px;
+  font-size: 14px;
 }
 #id2 {
   text-align: center;
   position: absolute;
-  bottom: 60px;
+  bottom: 40px;
   left: 15px;
   z-index: 100;
   margin: 10px;
+  font-size: 14px;
 }
 #id3 {
   text-align: center;
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   left: 15px;
   z-index: 100;
   margin: 10px;
+  font-size: 14px;
 }
 /* This is Search Bar */
 #searchBar img {
@@ -670,22 +674,159 @@ iframe {
 #image> button + button {
   left: 50px;
 }
-.slidingImage8 > div {
-  width: 85%;
-  height: 30px;
-
+/* bottom */
+#bott > div {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
   display: grid;
   align-items: center;
+  padding: 5px;
+  margin: auto;
+  
+  
 }
-.slidingImage8 {
-  display: flex;
-  justify-content: center;
-  margin: 10px 0px;
+#bott {
+  
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
 }
 
 
 /* footer */
+#footerSection{
+  background-color: black;
+  box-sizing: border-box;
+  padding: 15px 140px;
+  color: white;
+}
+#footer_logo>img{
+  width: 9%;
+  
+  display: block;
+  margin: auto;
+}
+#social_media{
+  display: flex;
+  width: 250px;
+  margin: 10px auto;
+  
+  justify-content: space-around;
+}
+#social_media>div>img{
+  width: 20px;
+  height: 20px;
+  
+  display: block;
 
+
+}
+.MuiSvgIcon-root{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}
+#mainContent{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin-top: 45px;
+  
+}
+#cont_right{
+  
+  width: 450px;
+}
+
+#cont_right>div{
+  display: flex;
+  margin-top: 30px;
+}
+
+#cont_right>div>div{
+  display: flex;
+  width: 200px;
+  color: #99996D;
+  margin-right: -10px;
+}
+#sub_email>h3{
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+}
+#cont_right>h3{
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+}
+#sub_email>label{
+  margin-top: 30px;
+  
+  font-family: Poppins, sans-serif;
+  display: flex;
+}
+#sub_email>label>input{
+  background-color: black;
+  width: 300px;
+  color: #6F8989;
+  padding: 5px;
+  border: 0px;
+  border-bottom: 1px solid #6F8989;
+}
+#sub_email>label>span{
+  font-size: 16px;
+  display: flex;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FC2779;
+}
+h4{
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 30px 0px;
+}
+#info_sec{
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
+  
+}
+#info_sec>p{
+  color: #99996D;
+}
+#connections{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+hr{
+  border: 1px solid #6F8989;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+hr+p{
+  text-align: center;
+  font-size: 15px;
+}
+#connections>div>h5{
+  font-size: 15px;
+}
+#connections>div>p{
+  color: #6F8989;
+  font-size: 10px;
+
+}
+#cont_right>div>div>img{
+  width: 90px;
+  
+  display: block;
+  margin-left: 25px;
+  height: auto;
+  
+}
 /* Navbar changed css */
 
 nav {
@@ -812,5 +953,19 @@ nav > div > div > a:hover {
   display: block;
 }
 #card {
+  cursor: pointer;
+}
+
+#id7{
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 100px;
+  display: grid;
+  align-items: center;
+}
+
+#id7>p>a>img{
+  width: 21px;
   cursor: pointer;
 }
