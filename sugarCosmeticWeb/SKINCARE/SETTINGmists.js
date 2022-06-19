@@ -22,7 +22,8 @@ function disPlay(a){
         const name = document.createElement('h4');
         name.innerText = SkinCareProducts[i].name;
         const price = document.createElement('p');
-        price.innerText ="Rs." +SkinCareProducts[i].price;
+        price.innerText = SkinCareProducts[i].price;
+        console.log(price);
         const rating = document.createElement('p');
         rating.innerText =" ⭐ "+SkinCareProducts[i].rating;
         const hoverPart = document.createElement('div');
@@ -32,7 +33,7 @@ function disPlay(a){
         const wl = document.createElement('div');
         wl.innerText = "🤍"
         wl.addEventListener("click", () => {
-            localStorage.setItem("watchlistItems",JSON.stringify(SkinCareProducts))
+            localStorage.setItem("wishList",JSON.stringify(SkinCareProducts))
         })
         const atc = document.createElement('div');
         atc.innerText = "Add to Cart"

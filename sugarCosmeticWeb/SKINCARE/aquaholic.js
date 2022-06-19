@@ -38,7 +38,7 @@ SkinCareProducts = [
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/moisturiser.jpg?v=1626968292",
         name: "AQUAHOLIC PRIMING MOISTURIZER",
-        price: "99",
+        price: 99,
         rating: 4.5
     },    
 ]
@@ -61,12 +61,12 @@ function disPlay(a){
         const wl = document.createElement('div');
         wl.innerText = "🤍"
         wl.addEventListener("click", () => {
-            localStorage.setItem("watchlistItems",JSON.stringify(SkinCareProducts))
+            localStorage.setItem("wishList",JSON.stringify(SkinCareProducts))
         })
         const atc = document.createElement('div');
         atc.innerText = "Add to Cart"
         atc.addEventListener("click", () => {
-            localStorage.setItem("CartItems",JSON.stringify(SkinCareProducts))
+            localStorage.setItem("cartItems",JSON.stringify(SkinCareProducts))
         })
         hoverPart.style.display = "flex"
         hoverPart.style.justifyContent = "space-between"
