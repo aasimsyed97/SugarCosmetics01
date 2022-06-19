@@ -2,67 +2,67 @@ SkinCareProducts = [
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-acne-combo-pack-of-6-14056089157715.jpg?v=1619113757",
         name: "ACNE COMBO (PACK OF 6)",
-        price: "559",
+        price: 559,
         rating: 5
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-swipe-right-cleansing-water-12771592732755.jpg?v=1619106450",
         name: "CHEAT SHEET CLARIFYING MASK (PACK OF 6)",
-        price: "449",
+        price: 449,
         rating: 4.7
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/Coffee-culture-hydrating-mist-01.jpg?v=1644312897",
         name: "CHEAT SHEET ANTI-AGING MASK (PACK OF 6)",
-        price: "449",
+        price: 449,
         rating: 4.9
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-anti-aging-mask-pack-of-6-12784629776467.jpg?v=1619114575",
         name: "CHARCOAL PATROL BUBBLE MASK (PACK OF 6)",
-        price: "699",
+        price: 699,
         rating: 5
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-total-mask-erade-pack-of-3-14056092074067.jpg?v=1644930751",
         name: "TOTAL MASK-ERADE (PACK OF 3)",
-        price: "299",
+        price: 299,
         rating: 4.8
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-what-a-treat-pack-of-3-14056089714771.jpg?v=1619113879",
         name: "WHAT A TREAT! (PACK OF 3)",
-        price: "299",
+        price: 299,
         rating: 5
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-get-unmasked-pack-of-3-14056092467283.jpg?v=1619113899",
         name: "GET UNMASKED (PACK OF 3)",
-        price: "299",
+        price: 299,
         rating: 4.8
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-the-clear-glow-pack-of-12-14056095613011.jpg?v=1644585135",
         name: "THE CLEAR GLOW (PACK OF 12)",
-        price: "1149",
+        price: 149,
         rating: 4.5
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-my-face-shields-pack-of-6-28122594541651.jpg?v=1619113968",
         name: "MY FACE SHIELDS (PACK OF 6)",
-        price: "599",
+        price: 599,
         rating: 4.9
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-pore-care-mask-pack-of-6-12784627187795.jpg?v=1619114552",
         name: "CHEAT SHEET PORE CARE MASK (PACK OF 6)",
-        price: "699",
+        price: 699,
         rating: 5
     },
     {
         image: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-charcoal-patrol-face-mask-pack-of-6-12784634986579.jpg?v=1619114602",
         name: "CHARCOAL PATROL MASK (PACK OF 6)",
-        price: "449",
+        price: 449,
         rating: 5
     },
     
