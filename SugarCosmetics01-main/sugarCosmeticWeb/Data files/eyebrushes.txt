@@ -1,0 +1,32 @@
+eybrushItems = [
+    {
+        image:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982",
+        name:"blend trend eyeshadow brush -043 - round xl",
+        price: 399,
+        rating:"4.8(6)",
+    },
+     {
+        image:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-3-min.jpg?v=1627573657",
+        name:"blend trend eyeshadow brush -042 - round",
+        price: 399,
+        rating:"4.4(5)",
+    },
+     {
+        image:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-13.jpg?v=1627659977",
+        name:"Blend Trend Dual Eyeshadow Brush - 413 Flat + Round Xl",
+        price:599 ,
+        rating:"5(2)",
+    },
+     {
+        image:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-2-min.jpg?v=1627573652",
+        name:"Blend Trend Eyeshadow Brush - 041 Flat",
+        price: 399,
+        rating:"5(3)",
+    },
+     {
+        image:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-5-min.jpg?v=1627573639",
+        name:"Blend Trend Dual Eyeshadow Brush - 412 Flat + Round",
+        price:599 ,
+        rating:"5(2)",
+    }
+]

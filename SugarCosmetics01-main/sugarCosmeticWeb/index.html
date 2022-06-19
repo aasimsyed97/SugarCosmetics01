@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home Page</title>
+
+  <script src="https://kit.fontawesome.com/e99a9eb445.js" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="index.css" />
+
+<body>
+  <div id="navbar">
+    <div id="headline">
+      <p>FREE Matte Attack Transferproof Lipstick on a spend of Rs.799</p>
+      <i id="cancel" class="fa-solid fa-xmark"></i>
+    </div>
+    <div id="searchBar">
+      <img id="logo" src="https://in.sugarcosmetics.com/desc-images/pride-logo-option.gif" alt="" />
+      <div>
+        <input type="text" placeholder="Try Liquid Lipstick" />
+        <label>Search</label>
+      </div>
+
+      <div>
+        <img
+          src="data:image/png;base64,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"
+          alt="" />
+        <p id="login">Login/Register</p>
+        <!-- <div id="blur_bg">
+
+            <div id="signin_container">
+                <div>
+                    <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+                        style="height: 20px; cursor: pointer;">
+                        <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z">
+                        </path>
+                    </svg>
+                </div>
+                <div id="title">
+                    <h1>Login/Sign Up</h1>
+                </div>
+                <div id="data_container">
+                    <div id="data_collector">
+                        <h3><img src="https://in.sugarcosmetics.com/smartphone.svg" alt="">Login/Sign Up Using Phone</h3>
+                        <label>+91
+                            <input type="tel" required max="11">
+                            <button id="otp_reqBtn">Request OTP</button>
+                        </label>
+                        <p>Enter your phone number to request an OTP</p>
+                    </div>
+                    <div id="line"></div>
+                    <div id="otp_veryfier">
+                        <p>Enter the 4 digit OTP received on your phone.</p>
+                        <div id="otp_box">
+                            <input type="tel">
+                            <input type="tel">
+                            <input type="tel">
+                            <input type="tel">
+                        </div>
+                        <div id="otp_btn">
+                            <button id="verify_btn">Verify OTP</button>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="" id=""><span>Get Important Updates on Whatsapp <a href="">Terms and
+                                Conditions</a> </span>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+      </div>
+      <div>
+        <a href="./Makeup/wishLisst/wishlist.html"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJhNuXyxJAA1r2bJb7EkdLNY6WOA80TLEY5A&usqp=CAU"
+            alt="" /></a>
+        <a href="./CartPage/cat.html"> <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEUBAAL///8AAAChoaHu7u76+vr09PTb29vY2NjMzMy+vr7q6uqampp0dHTU1NRHR0eqqqqMjIwYFxi2trfh4eFvb29UVFUxMTJZWVktLC1/f39qamo/P0AiIiM4ODiVlZUZGRoQEBBNTU2urq6HhodkZGRYWFnFxcUnJidFREW7u7sgHyE5Rfr4AAAKQElEQVR4nOWda1vqOhCFOaUt94qAXBUERFD+//87LW3aXGYipul+XLo+bRCSvAWalZlkduu/f6EoTqbD0fKwvexb+8v2sBwNp904+id9txrvIew9zvcBpcn8sRc23n/DhMmuoGuZuj2/n++SZofQJOFgeOHoFMrLcNDgKBojjI6HL+hkysO0sR9lQ4Tx8HofXgn50o6bGUojhNFuouGRdxrtFa+7Rj7HJgh36uhznP3lMBqOj8fp8Tgejg6XvUGZPho2MBr/hL2VPPD8fvl47hiv65yLWUR+7aLnfTy+CcONhrd9s8x5Ye9tq0FufM+Qngmn0nCzob91v3xL9y1Q3zT1OySvhNGTMtSHzzvf1z8ojCOfY/JKOFvI4zx9x6skG/mti5nHUXkknJaDTD+ROfH1jGadJOkl3c6MmBa6y0B6v8dvqj/CnTTAlXZL7E6Hy5U8KbZWy3R1ob4ouwmXLfibN7wRrqXh7aTn43RpQc73mdLFhexk5Iu09jUwX4Tl7yi9wVS/ovB4Uqc8VbfJ8nSs5ofZQ9XMk6eReSKcVyN7LJ/sn75aWhSGZ9kv3/NYNfTuZ2h+CCVA8QsMh1/jSZBD8UH2qqbmXsbmhXBUDmpRrPQG6zvxKsi1eGs55/iZGH0Qim9W+sXK7xvhmsTjlhXijwVjvCzb29m6vVMeCNvlgE7lEzrC16un22vaeQObssVx/eHVJ+yVw9ncHne21Npw9fA07J+T7mww6ybnfvvpsKLWiNt8jnwq26y/1qhNGLfEYG6/muhRHXVGcVh/UjZs1l8fdMjUq9/8zkgg7muv/GsTvovbwjJ71LvII75N6m1bmCkcv6uQQXA5Z384Kc3WUV3CobjYW/mR4JvcEXyJ2leN8ebYngP5UQ3VJEwE4CRD0Va/y/OdrZxP2io4fS6+CsSa8dSahAtpGIMPZZjz79wkkqXy3o/0m91Vvh3uqkfYFoDpbT7ZK0u8794Ek2f57fv0io0FYr0poxZhKMaQuuSzsrxvO7Q2Vhb652zOKP5dK3RTi3AjhhCpgCe3KH34pCJG0gV0Vx3CYq4Pgs/KL2cfoPu36iiv83v/9UUHdeb9OoTFVJiatUQa2PXr8BqvmbzO75ZfkjqTYg3CRFzhsCMNa1kzNL+R2prFoosaV60G4bzofRdLg6q/4HmrWtvHRVyjzmrYnXBWdN6KDnSExlWVMQoOUau4jO7xRXfCwjkGRynw4DJJmBpXDT4ey9+6q5wJB8VH+PpZjcdXCLBdNfn5WnyIzmliZ8LiQgejCRGDqqsyrBhMRgWh8xTkTHgofoUvJaDPdEMZfQ2uxS/x4NqUK+GsXIWLu8KH6xBISXcvMXU4tuRK+KhFWYK937xfPNE7cP0NuBKu9AiL7+RtN9B6WDk25EgYqv0HwZtj/7x2eheOXxJHwql2gWuuUkl9aH04ZtwcCUfa9W1i51ZH+xAd79WOhHu1c2+pMEVvaid7t1bcCNXLm62AG5HWi7lj5R65EfbVvv3YUVNjlbD/9TsIuREOla4vje26Wyj9uNleN8LNP/kIb1ENqZ+NUxtuhPKNPA8GN6PoRe7IzRc6EcYXuWN/SwpT8rQfXJwupRPhTO7XfeV2h0KlJyfz7UQoTxbuy5q79C4TOk0XToSyK/a90U5TXyZ0irg5Efbkbhs+NSFfTKf1ixPhp9Sr2y38fkkOOLh3r6MiJ8Kj1KuHvQRWSauY4OjSgBNhZWmavZNmGkjZGidTU5ewiYWhqo8GCc9tRqeq04cx9yJPGj9UnZ24F9nS6TbCDbtrsvxp0FuB/OqOzmy3OxvhSfbXP1nWmL+N8ABDaPNVFsJ4BUO4snhyC2G4hyG0haMthIMAhtA2K1sIZ0CElnWVhbCHAmj35BbCKRChZQlnIRwCEVr8nIVQT6D9YNliRRbCNRChJa1gIYQxbXbbZiF8BiJ8diKEsTT2vJSFEGbCz6Z8F8IIipCP+PGEMxzAFJG3bTwhkGmz2jaeEMi0WW0bTziGIuTDtjwhkC21GlOecARFyG9F4QnnUIT8iVqecAFFuHAgbEERWjjYvwBZGqttYwlDMEI2nsgSdsAI2Rw/S9gDI2RtG0vYByNkN72xhEckQFsGnCXcgRGy55FYQijTZrNtLOESjJA9osgSPoARPnybcAtGyG4K4QjjFzDCFy4NzBHipEdz8UlSjhAnPZqLT5JyhPqxo58ufmsmR3jGAkwRuX1RHCFUpC0TG23jCIHSo7nYJClHCJQezcUmSTnCJzhCrjwIRwhmSy3GlCGMwExbZtuYBBtDaBw0/vFiDydxhGATfjblf48QK5aYiY0nMoRdNMAUkbFtDGEfkJCJtjGEcKaNt20MIVR6NBeXJGUI4Wwpb0wZQjjTxts2hhAs0paJi7YxhFdAwuu3COEmfD5J+lcJB3iAKSIdT6QJE0hCuoQMTQho2ljbRhNC7doTYnbv0YSAtpQ1pjThGyQhXY2LJgQ6iFCJOZJAEwKaNta20YQwp0dlMTXraMJXSMLX+wljqH2JQkGLjLaRhGjp0VxMkpQkTEAJSdtGEmLt2hNidu+RhJC2lDOmJGEblJAsHEcSQpo2zraRhBtQQrLECUn4DkpI1qYnCWGKmqiiS5xQhBHUYZJKwYJKA1OEIVwCOFcwoVKIFCHarj0hevceRYhpSzljShFCxhIzkcaUIoSMtGUio20UIWB6NBeZJKUIAdOjucgkKUUIt2tPiNy9RxGC2lLGmFKEH7CEVLVogjACO4hQKXghbBtFCDrhMwVA/iQhVFETVZRtIwihipqooqJtBCGsaaNtG0EIGmnLREXbCEJYW0obU4IQ1rTRto0gBI20ZaKibQQhaBwqE1XihCCEnfDpnV9/kRDvqEUl6tCFSYgaactERdtMQsz0aC4qSWoSYhU1UUWVODEJgW0paUxNQrCiJqqIEicmIVhRE1VEiROTENi0kbbNJAQqH2yKKChsEgLbUtKYGoRoRU1UESVODMIB5K49oaBlJEkNQqxKdLqIynQGIeauPSFi955BCBxLzGQaU4MQrBKdLrMynUEIbdoo22YQAkfaMpnRNoMQNj2ay0ySGoRwRU1UmSVOdMII2pZmxlRPsOmEMeAJYFnBVbdtOiFeyQ9VZgEQnRB1156QuXtPJ+xgA6aIujHVCeEq0ekyKtPphJCnR2UZJ0l1QnDTRtg2nRB2156QsXtPJ4SOJWYy4ok6IdT/akHJ+J8udELI87GyjLOyOiH4hE8kSf8cYYgOmCKGVkLASnS69Mp0GiHo6VFZepJUIwSPtGXSo20aIbwtNY2pRghv2kzbphGCR9oy6dE2jRCyqIkqvcSJRnj5BYQXKyG8pTFNjUqIexChkn4kQSVE3tMmpO9tUwmx06O59CSpSnj+FYRnC+EvsKWGMVUJgY9aVNIOXaiEoEVNVGklTlTCX2DaDNumEsJH2jJp0TaV8BfYUsOYKoSoRU1UaSVOFMIQstaeruA1ZAl/g2kzbJtCiL1rT0jbvfc/zR2ROURGFGMAAAAASUVORK5CYII="
+            alt="" /> </a>
+        <a href="https://in.sugarcosmetics.com/pages/offer"> <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT86hFk58VamDIWA33gse5XtHOtotbhW5Vyug&usqp=CAU"
+            alt="" /></a>
+      </div>
+    </div>
+    <!-- <div id="menu">
+      <select name="" id="">
+        <option value="MAKEUP">MAKEUP</option>
+        <option value="LIPS">LIPS</option>
+        <option value="FACE">FACE</option>
+        <option value="EYES">EYES</option>
+      </select>
+      <select name="" id="">
+        <option value="BRUSHES">BRUSHES</option>
+        <option value="FACE BRUSHES">FACE BRUSHES</option>
+        <option value="EYES BRUSHES">EYES BRUSHES</option>
+      </select>
+
+      <select name="" id="">
+        <option value="SKINCARE">SKINCARE</option>
+        <option value="MOISTURIZERS">MOISTURIZERS</option>
+        <option value="SUNSCREEN">SUNSCREEN</option>
+        <option value="SETTING MISTS">SETTING MISTS</option>
+        <option value="COFFEE CULTURE RANGE">COFFEE CULTURE RANGE</option>
+        <option value="SHEET MASK COMBO">SHEET MASK COMBO</option>
+        <option value="CITRUS GOT REAL RANGE">CITRUS GOT REAL RANGE</option>
+        <option value="AQUAHOLIC RANGE">AQUAHOLIC RANGE</option>
+        <option value="MASKS">MASKS</option>
+      </select>
+      <select name="" id="">
+        <option value="TRENDING">TRENDING</option>
+        <option value="SUGAR MERCH STATION">SUGAR MERCH STATION</option>
+        <option value="MAKEUP KITS">MAKEUP KITS</option>
+        <option value="BESTSELLERS">BESTSELLERS</option>
+        <option value="SUGAR SETS">SUGAR SETS</option>
+        <option value="VALUE SETS">VALUE SETS</option>
+      </select>
+      <select name="" id="">
+        <option value="BLOG">BLOG</option>
+        <option value="FEATURED">FEATURED</option>
+        <option value="MAKEUP">MAKEUP</option>
+        <option value="SKINCARE">SKINCARE</option>
+      </select>
+      <select name="" id="">
+        <option value="OFFERS">OFFERS</option>
+      </select>
+      <select name="" id="">
+        <option value="STORES">STORES</option>
+      </select>
+    </div> -->
+    <nav>
+      <div class="nav1">
+        <a href="./Makeup/main makeup/makeup.html">MAKEUP</a>
+        <div class="dropdown1">
+          <a href="./Makeup/main makeup/lips.html">LIPS</a>
+          <a href="#">FACE</a>
+          <a href="./Makeup/eye page/eyeMakeup.html">EYES</a>
+        </div>
+      </div>
+      <div class="nav2">
+        <a href="./brushMain/brushes.html">BRUSHES</a>
+        <div class="dropdown2">
+          <a href="./facebrushes/facebrushes.html">FACE BRUSHES</a>
+          <a href="./eyebrushes/eyebrushes.html">EYE BRUSHES</a>
+        </div>
+      </div>
+      <div class="nav3">
+        <a href="./SKINCARE/scincare.html">SKINCARE</a>
+        <div class="dropdown3">
+          <a href="./SKINCARE/MOISTRIZERS.html">MOISTRIZERS</a>
+          <a href="./SKINCARE/SUNSCREEN.html">SUNSCREEN</a>
+          <a href="./SKINCARE/SETTINGmists.html">SETTING MISTS</a>
+          <a href="./SKINCARE/cofeecultre.html">COFFEE CULTURE RANGE</a>
+          <a href="./SKINCARE/sheetmask.html">SHEET MASK COMBO</a>
+          <a href="./SKINCARE/citrus.html">CITRUS GOT REAL RANGE</a>
+          <a href="./SKINCARE/aquaholic.html">AQUAHOLIC RANGE</a>
+          <a href="./SKINCARE/masks.html">MASKS</a>
+        </div>
+      </div>
+      <div class="nav4">
+        <a href="./trending/trending.html">TRENDING</a>
+        <div class="dropdown4">
+          <a href="./sugarmerchstation/sugarmerch.html">SUGAR MERCH <br> STATION</a>
+          <a href="./makeupkits/makeup.html">MAKEUP KITS</a>
+          <a href="./bestseller/bestseller.html">BESTSELLERS</a>
+          <a href="./sugarsets/sugarset.html">SUGAR SETS</a>
+          <a href="./valuesets/valuesets.html">VALUE SETS</a>
+        </div>
+      </div>
+      <div class="nav5">
+        <a href="./blog.html">BLOG</a>
+        <div class="dropdown5">
+          <a href="./sugarmerchstation/sugarmerch.html">FEATURED</a>
+          <a href="./makeupkits/makeup.html">MAKEUP</a>
+          <a href="./bestseller/bestseller.html">SKIN</a>
+        </div>
+      </div>
+      <div class="nav6">
+        <a href="https://in.sugarcosmetics.com/pages/offer">OFFERS</a>
+      </div>
+      <div class="nav7">
+        <a href="https://in.sugarcosmetics.com/stores">STORES</a>
+      </div>
+    </nav>
+  </div>
+  <!-- displayImage -->
+  <div id="displayImage"><img
+      src="https://d32baadbbpueqt.cloudfront.net/Homepage/70252059-0efb-40b0-b659-6d27afafa0ee.jpg" alt="">
+    <button>></button>
+    <button>
+      < </button>
+  </div>
+
+  <p class="subHeading">REFER YOUR FRIENDS</p>
+  <div>
+    <img src="https://d32baadbbpueqt.cloudfront.net/f53f2d67-ea43-4959-abca-eba6d87fd598.jpg" alt="" />
+  </div>
+  <p class="subHeading">AIR KISS POWDER LIPSTICK</p>
+  <iframe width="1221" height="438" src="https://www.youtube.com/embed/VXMBlOqZJbI"
+    title="SUGAR Air Kiss Powder Lipstick- Website Video | SUGAR Cosmetics" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  <p class="subHeading">BESTSELLERS</p>
+
+  <div id="slidingImage">
+    <div id="container2">
+      <div id="A1"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/382512089-mettle-priming-balm-01.jpg?v=1648654861"
+          alt="">
+        <h4>METTLE PRIMING BALM</h4>
+        <div>
+          <p id="des">₹ 1099</p><button id="btn2">ADD TO CART</button>
+        </div>
+      </div>
+      <div id="A2"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116"
+          alt="">
+        <h4>AIR KISS POWDER LIPSTICK</h4>
+        <div>
+          <p id="des2">₹ 499</p><button id="btn2-2">SELECT SHADE</button>
+        </div>
+      </div>
+      <div id="A3"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_c30a9b16-ef13-44c3-af41-04b227c62419.jpg?v=1642434141"
+          alt="">
+        <h4>LIP ZIP MATTE TOPPER</h4>
+        <div>
+          <p id="des3">₹ 499</p><button id="btn2-3">ADD TO CART</button>
+        </div>
+      </div>
+      <div id="A4"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771"
+          alt="">
+        <h4>BLING LEADER ILLUMINATING SUNSCREEN SPF35 PA***</h4>
+        <div>
+          <p id="des4">₹ 599</p><button id="btn2-4">SELECT SHADE</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p class="subHeading">QUICK BEAUTY TIPS WITH SUGAR</p>
+  <div id="displayImage2">
+    <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/2cf0052d-e531-4f6e-9b00-e31f3642f0b3.jpg" alt="">
+    <button>></button>
+    <button>
+      << /button>
+  </div>
+
+  <p class="subHeading">HOT DEALS</p>
+  <div id="slidingImage2">
+    <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/66b53f34-09bf-4f37-a62a-e9d5f2a4b0cf.jpg" alt="">
+    </div>
+    <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/f8229b54-2d9c-4215-8901-4ddf2d94d084.jpg" alt="">
+    </div>
+    <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/9d535c56-b2f8-4f20-a076-79727a1548e4.jpg" alt="">
+    </div>
+    <button>></button>
+    <button>
+      << /button>
+  </div>
+  <p class="subHeading">NEWLY LAUNCHED</p>
+  <div id="displayImage3">
+    <img src="https://d32baadbbpueqt.cloudfront.net/Homepage/f25612b8-b6b8-4d08-8704-def43067c472.jpg" alt="">
+    <button>></button>
+    <button>
+      << /button>
+  </div>
+  <p class="subHeading">SUGAR STREAMING</p>
+  <div id="videosliding">
+    <div>
+      <iframe width="320" height="526" src="https://www.youtube.com/embed/TKRWZ9AHNyI"
+        title="Indian Bridal Long Lasting Makeup | #SUGARVargiSong | #shorts | SUGAR Cosmetics" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/CQU1leynnys"
+        title="Office To Party Makeup | Live Session | SUGAR Cosmetics" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/c_Ag3lkpZbs"
+        title="FULL FACE OF SUGAR COSMETICS TESTED ! Is It Worth It ? 🤔 Not Sponsored Review | Ria Sehgal"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/a5RiQXOnqAM"
+        title="Presenting SUGAR's First TV Commercial feat. Taapsee Pannu | #BoldAndFree | SUGAR Cosmetics"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/bT_Zpf-cbzo"
+        title="Full face of SUGAR cosmetics | Review" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/C-4t8GAKT-E"
+        title="SUGAR Cosmetics Matte Attack Transferproof Lipstick Lip Swatches & Review | New Shades | 11-17"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+  <p class="subHeading2">SUPER SAVERS</p>
+  <div id="slidingImage3">
+    <div id="container3">
+      <div id="B1"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_cbc3a2d6-9266-467e-a973-017e3c65d5cf.jpg?v=1649433283"
+          alt="">
+        <h4>SHINE & POUT MAKEUP VALUE SET</h4>
+        <div>
+          <p id="des3-1">₹ 999 (16% 0ff)</p><button id="btn3-1">SHOP NOW</button>
+        </div>
+      </div>
+      <div id="B2"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_116c638f-21f6-4640-aab0-6022540b24e1.jpg?v=1649692784"
+          alt="">
+        <h4>MESMERIZE EYES MAKEUP SET</h4>
+        <div>
+          <p id="des3-2">₹ 1299 (18% Off)</p><button id="btn3-2">CHOOSE PRODUCTS</button>
+        </div>
+      </div>
+      <div id="B3"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/2_bb525208-246a-4f40-b57f-d88372708398.jpg?v=1655308814"
+          alt="">
+        <h4>GLAM EYE MAKEUP VALUE SET</h4>
+        <div>
+          <p id="des3-3">₹ 1249 (19% Off)</p><button id="btn3-3">CHOOSE PRODUCTS</button>
+        </div>
+      </div>
+      <div id="B4"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_e4b6c948-178e-4bfe-a3b3-926119dea615.jpg?v=1649865681"
+          alt="">
+        <h4>SET OF 4 KAJAL SET</h4>
+        <div>
+          <p id="des3-4">₹ 799 (19% Off)</p><button id="btn3-4">CHOOSE PRODUCTS</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="subHeading">TOP PICKS OF THE WEEK</p>
+  <div id="slidingImage4">
+    <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/f40172c6-147a-4895-ac1f-d430c3cc0a55.jpg" alt="">
+    </div>
+    <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/9a090aa5-6bd8-4d10-a77f-409c3619fc89.jpg" alt="">
+    </div>
+    <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/2ef5fc68-77d8-4083-9a4d-f37f42e98feb.jpg" alt="">
+    </div>
+    <button>></button>
+    <button>
+      << /button>
+  </div>
+  <p class="subHeading">GIFTING</p>
+  <div id="slidingImage5">
+    <div id="container5">
+      <div id="C1"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-matte-as-hell-crayon-lipstick-minis-set-28270316945491.jpg?v=1623073051"
+          alt="">
+        <h4>MATTE AS HELL CRAYON LIPSTICK MINIS SET</h4>
+        <div>
+          <p id="des5-1">₹ 1099 (38% Off)</p><button id="btn5-1">CHOOSE PRODUCTS</button>
+        </div>
+      </div>
+      <div id="C2"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-minis-set-15520724582483.jpg?v=1620651966"
+          alt="">
+        <h4>SMUDGE ME NOT LIQUID LIPSTICK MINIS SET</h4>
+        <div>
+          <p id="des5-2">₹ 799 (20% Off)</p><button id="btn5-2">CHOOSE PRODUCTS</button>
+        </div>
+      </div>
+      <div id="C3"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_37e8dc88-a720-44ed-a5f3-1e0f0e95bc17.jpg?v=1649692645"
+          alt="">
+        <h4>DATE NIGHT MAKEUP KIT</h4>
+        <div>
+          <p id="des5-3">₹ 1599 (27% Off)</p><button id="btn5-3">CHOOSE PRODUCTS</button>
+        </div>
+      </div>
+      <div id="C4"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/Wedding-Makeup-Kit---WBG-Images-op-3.jpg?v=1653494398"
+          alt="">
+        <h4>WEDDING MAKEUP KIT</h4>
+        <div>
+          <p id="des5-4">₹ 1699 (27% Off)</p><button id="btn5-4">CHOOSE PRODUCTS</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="subHeading">THIS OR THAT</p>
+  <div id="container">
+    <div>
+      <img src="https://d32baadbbpueqt.cloudfront.net/87e180d8-98a5-44d4-88f2-4af24327cd7c.jpg" alt="" />
+    </div>
+    <div>
+      <img src="https://d32baadbbpueqt.cloudfront.net/38a305ba-a808-4ade-ba72-fc55f5bc6183.jpg" alt="" />
+    </div>
+  </div>
+  <p class="subHeading">JUST-IN</p>
+  <div id="slidingImage6">
+    <div id="container6">
+      <div id="D1"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/399160329-9-to-5-makeup-kit-wbg-01.jpg?v=1654013564"
+          alt="">
+        <h4>9 TO 5 MAKEUP KIT</h4>
+        <div>
+          <p id="des6-1">₹ 999 (25% Off)</p><button id="btn6-1">CHOOSE PRODUCTS</button>
+        </div>
+      </div>
+      <div id="D2"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/2_d5e8f5f6-db6f-43d4-a1ac-1da7b22fdc1b.jpg?v=1652943021"
+          alt="">
+        <h4>THE MOST ELIGIBLUR CORRECTING PRIMER</h4>
+        <div>
+          <p id="des6-2">₹ 799</p><button id="btn6-2">SELECT SHADE</button>
+        </div>
+      </div>
+      <div id="D3"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771"
+          alt="">
+        <h4>BLING LEADER ILLUMINATING SUNSCREEN SPF35 PA***</h4>
+        <div>
+          <p id="des6-3">₹ 599</p><button id="btn6-3">SELECT SHADE</button>
+        </div>
+      </div>
+      <div id="D4"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/382512089-mettle-priming-balm-01.jpg?v=1648654861"
+          alt="">
+        <h4>METTLE PRIMING BALM</h4>
+        <div>
+          <p id="des6-4">₹ 1099</p><button id="btn6-4">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="subHeading">SUGAR BEAUTY BLOG</p>
+  <div id="slidingImage7">
+    <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/b9a64f84-817c-4984-a9e3-a75ec31843e4.jpg" alt="">
+    </div>
+    <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/47cd2c21-b320-4473-8fdc-9eb49ddefdda.jpg" alt="">
+    </div>
+    <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/f41ec860-3e9d-46b1-8c48-8ad7feb8d9e8.jpg" alt="">
+    </div>
+    <button>></button>
+    <button>
+      << /button>
+  </div>
+  <p class="subHeading">SKINCARE BASICS</p>
+  <div id="slidingImage8">
+    <div id="container8">
+      <div id="E1"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/Coffee-culture-cleansing-balm-stick-01.jpg?v=1643375708"
+          alt="">
+        <h4>COFFEE CULTURE CLEANSING BALM STICK</h4>
+        <div>
+          <p id="des8-1">₹ 699</p><button id="btn8-1">ADD TO CART</button>
+        </div>
+      </div>
+      <div id="E2"><img src="https://cdn.shopify.com/s/files/1/0906/2558/products/Hyaluronic-Serum-3_1.jpg?v=1626423730"
+          alt="">
+        <h4>AQUAHOLIC HYALURONIC SERUM</h4>
+        <div>
+          <p id="des8-2">₹ 499</p><button id="btn8-2">ADD TO CART</button>
+        </div>
+      </div>
+      <div id="E3"><img
+          src="https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771"
+          alt="">
+        <h4>BLING LEADER ILLUMINATING SUNSCREEN SPF35 PA**</h4>
+        <div>
+          <p id="des8-3">₹ 599</p><button id="btn8-3">SELECT SHADE</button>
+        </div>
+      </div>
+      <div id="E4"><img src="https://cdn.shopify.com/s/files/1/0906/2558/products/Hydrating-Primer-3.jpg?v=1626423647"
+          alt="">
+        <h4>AQUAHOLIC HYDRATING PRIMER</h4>
+        <div>
+          <p id="des8-4">₹ 699</p><button id="btn8-4">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="subHeading">EXPLORE</p>
+  <div id="image">
+    <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/f6d29c12-e7cf-476e-a654-b6697e0fa8de.jpg" alt="">
+    </div>
+    <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/60cfcab0-427f-4748-8c44-5bae2bbfa3a4.jpg" alt="">
+    </div>
+    <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/4188e9cd-11e4-452e-bec3-577894e7ec81.jpg" alt="">
+    </div>
+    <div><img src="https://d32baadbbpueqt.cloudfront.net/Homepage/eb4002ec-c165-4aaf-90b3-f813484fae25.jpg" alt="">
+    </div>
+    <button>></button>
+    <button>
+      << /button>
+  </div>
+  <div class="slidingImage8">
+    <div class="txt">READ MORE ABOUT SUGAR COSMETICS</div>
+  </div>
+  <!-- footer part of the webpage -->
+
+  <footer id="footerSection">
+    <div id="footerContent">
+      <div id="footer_logo">
+        <img src="https://in.sugarcosmetics.com/Footer_sugar_icon.png" alt="logo">
+      </div>
+      <div id="social_media">
+        <div><img src="	https://in.sugarcosmetics.com/desc-images/facebook.svg" alt=""></div>
+        <div><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z">
+            </path>
+          </svg></div>
+        <div><img src="https://in.sugarcosmetics.com/desc-images/Instagram.svg" alt=""></div>
+        <div><img src="https://in.sugarcosmetics.com/desc-images/Pinterest.svg" alt=""></div>
+        <div><img src="https://in.sugarcosmetics.com/desc-images/Tumblr.svg" alt=""></div>
+        <div><img src="https://in.sugarcosmetics.com/desc-images/Youtube.svg" alt=""></div>
+        <div>
+          <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z">
+            </path>
+          </svg>
+        </div>
+      </div>
+      <div id="mainContent">
+        <div id="cont_left">
+          <div id="sub_email">
+            <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+            <label><input type="email" required id="subEmail" placeholder="Your Email Address"><span>Sign
+                Up</span></label>
+          </div>
+        </div>
+        <div id="cont_right">
+          <h3> GET THE NEW SUGAR APP TODAY.</h3>
+          <div>
+            <div>
+              <p>Tap into a better shopping experience.</p>
+            </div>
+            <div>
+              <img src="https://in.sugarcosmetics.com/playstore.png" alt="">
+              <img src="https://in.sugarcosmetics.com/apple-store.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4>information</h4>
+      <div id="info_sec">
+        <p><a href="https://in.sugarcosmetics.com/stores">Stores</a></p>
+        <p><a href="https://in.sugarcosmetics.com/stores">Terms & Conditions</a></p>
+        <p><a href="https://in.sugarcosmetics.com/stores">Returns</a></p>
+        <p><a href="https://in.sugarcosmetics.com/stores">FAQs</a></p>
+        <p><a href="https://in.sugarcosmetics.com/stores">About Us</a></p>
+      </div>
+      <h4>GET IN TOUCH</h4>
+      <div id="connections">
+        <div>
+          <h5><img src="	https://in.sugarcosmetics.com/desc-images/phone_android_white.svg" alt=""> Call us at
+          </h5>
+          <a href="https://in.sugarcosmetics.com/stores">1800-209-9933</a>
+          <p>Monday to Friday : 9 AM to 7 PM</p>
+        </div>
+        <div>
+          <h5>Support</h5>
+          <a href="https://in.sugarcosmetics.com/stores">hello@sugarcosmetics.com</a>
+          <p></p>
+        </div>
+        <div>
+          <h5>Careers</h5>
+          <a href="https://in.sugarcosmetics.com/stores">We're hiring!</a>
+          <p></p>
+        </div>
+        <div>
+          <h5>PRESS & MEDIA</h5>
+          <a href="https://in.sugarcosmetics.com/stores">pr@sugarcosmetics.com</a>
+          <p></p>
+        </div>
+        <div>
+          <h5>INFLUENCER COLLAB</h5>
+          <a href="https://in.sugarcosmetics.com/stores">JOIN US</a>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <h5>Copyright © 2022 SUGAR Cosmetics. All rights reserved.</h5>
+  </footer> -->
+</body>
+
+</html>
+<script src="index.js">
+</script>
+
+</html>
