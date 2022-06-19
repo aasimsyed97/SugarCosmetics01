@@ -70,7 +70,8 @@ totalPaybleAmount = shipingCharge + cartSubtotal - discount;
 document.getElementById("da").innerText = "Rs." + " " + discount;
 document.getElementById("sc").innerText = "Rs." + " " + shipingCharge;
 document.getElementById("cst").innerText = "Rs." + " " + cartSubtotal;
-document.querySelector("#priceDisplay").innerText = totalPaybleAmount;
+let priceDisplayed = document.querySelector("#priceDisplay");
+priceDisplayed.innerText = totalPaybleAmount;
 document.getElementById("ap").innerText = "Rs." + " " + totalPaybleAmount;
 
 // calculating the discount through promo
@@ -79,6 +80,7 @@ document.querySelector("#apply").addEventListener("click", function () {
   let promo = document.querySelector("input").value;
   if (promo === "team50" && cartSubtotal > 1500) {
     discount = cartSubtotal * 0.5;
+    console.log(promo, cartSubtotal, discount);
   } else if (promo === "team30" && cartSubtotal > 600) {
     discount = (cartSubtotal * 0.3).toFixed(2);
   } else {
@@ -88,4 +90,14 @@ document.querySelector("#apply").addEventListener("click", function () {
   totalPaybleAmount = shipingCharge + cartSubtotal - discount;
   document.getElementById("ap").innerText = "Rs." + " " + totalPaybleAmount;
   document.querySelector("#priceDisplay").innerText = totalPaybleAmount;
+});
+
+document.querySelector("#gotoHome").addEventListener("click", function () {
+  window.location.href = "../index.html";
+});
+
+// creating the gateway of payments
+document.getElementById("paylast").addEventListener("click", function () {
+  let total = priceDisplayed.innerText;
+  localStorage.setItem("totalPayment", total);
 });
