@@ -22,7 +22,7 @@ function displayCartItems(cartItemsData) {
     // creating the imgbox
     let imgCard = document.createElement("div");
     let itemImg = document.createElement("img");
-    itemImg.src = ele.image;
+    itemImg.src = ele.img;
 
     //creating name box
     let nameCard = document.createElement("div");

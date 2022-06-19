@@ -4,132 +4,147 @@ let trendingdata =[
     {
         img:"https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270",
         name:"MATTE ATTACK TRANSFER PROOF LIPSTICK",
-        price:" Rs.699",
+        price:699,
         rating:" 4.7(428)",
-        category:"sugarmerchstation",
+        idtype: "eye",
         prodID:"1",
     },
-   
+    {
+        img:"https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116",
+        name: "AIR KISS POWDER LIPSTICK",
+        price:699,
+        rating:" 4.7(53)",
+        idtype: "combo",
+        prodID:"2",
+    },
     {
         img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-cooling-stick-28037939429459.jpg?v=1644409181",
         name: "CITRUS GOT REAL COOLING STICK",
-        price: "Rs.399",
-        rating: 4.6
+        price: 399,
+        idtype: "eye",
+        rating:" 4.6"
     },
     {
         img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-clarifying-mask-12775754203219.jpg?v=1619113702",
         name: "CHEAT SHEET CLARIFYING MASK",
-        price: "Rs.99",
-        rating: 4.9
+        price: 99,
+        idtype: "combo",
+        rating: "4.9"
     },
     {
         img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-daily-moisturizer-28038347292755.jpg?v=1619155748",
         name: "CITRUS GOT REAL DAILY MOISTURIZER",
-        price: "Rs.499",
-        rating: 4.9
+        price: 499,
+        idtype: "foundation",
+        rating:" 4.9"
     },
     {
         img: "https://cdn.shopify.com/s/files/1/0906/2558/products/Instant-Pore-Cleansing-Mask-1_1.jpg?v=1626423690",
         name: "AQUAHOLIC INSTANT PORE CLEANSING MASK",
-        price: "Rs.499",
-        rating: 4.8
+        price: 499,
+        idtype: "foundation",
+        rating: "4.8"
     },
     {
         img: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_61109b87-1ae6-4cb4-8550-5b57d688a4eb.jpg?v=1651852771",
         name: "BLING LEADER ILLUMINATING SUNSCREEN SPF35 P+++",
-        price: "Rs.599",
-        rating: 4.8
+        price: 599,
+        idtype: "eye",
+        rating: "4.8"
+        
     },
     {
         img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-anti-aging-mask-12775753744467.jpg?v=1619113715",
         name: "CHEAT SHEET ANTI-AGING MASK",
-        price: "Rs.99",
-        rating: 4.8
+        price: 99,
+        idtype: "foundation",
+        rating:" 4.8"
     },
     {
         img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-spf30-sunscreen-28038344736851.jpg?v=1619155723",
         name: "CITRUS GOT REAL SPF3O SUNSCREEN",
-        price: "Rs.399",
-        rating: 4.7
+        price: 399,
+        rating: "4.7",
+        idtype: "combo",
     },
      //
     {
             name: " NOTHING ELSE MATTER LONGWEAR LIPSTICK",
-            price: " Rs.499",
+            price: 499,
             rating: "4.7",
-            category: "bestseller",
+            idtype: "eye",
             img: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_1da9dee5-9c2e-4135-994c-9b7d2ca23e6b.jpg?v=1641915296 ",
-            prodID:"3",
+            idtype: "combo",
         },
 
         {
             name: "SMUDGE ME NOT LIQUID LIPSTICK ",
-            price: " Rs.499",
+            price: 499,
             rating: "4.8",
             category: "valueset",
             img: " https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813 ",
-            prodID:"4",
+            idtype: "foundation",
         },
 
         {
             name: " TIPS LIPS MOISTURIZING BALM",
-            price: " Rs.499",
+            price: 499,
             rating: "4.8",
-            category: "sugarset",
-            prodID:"5",
+            idtype: "eye",
+            idtype: "combo",
             img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tipsy-lips-moisturizing-balm-01-mojito-15057279877203.jpg?v=1619122412 "
         },
 
         {
             name: " GOOD MOODIES LIP CRAYON",
-            price: " Rs.599",
+            price: 599,
             rating: "4.8",
             category:"sugarmerchstation",
-            prodID:"6",
+            idtype: "foundation",
             img: "https://cdn.shopify.com/s/files/1/0906/2558/products/01_9e0bf9bb-92a6-45ca-8ce4-ce7d58c617ac.jpg?v=1639496863 "
         },
 
         {
             name: "METTLE SATIN LIPSTICK ",
-            price: " Rs.699",
+            price: 699,
             rating: "4.8",
-            category:"makeupkits",
-            prodID:"7",
+            idtype: "eye",
+            idtype: "combo",
             img: " https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-satin-lipstick-01-sophie-bright-fuchsia-pink-fuchsia-13706258088019.jpg?v=1619116113"
         },
 
         {
             name: "SMUDGE NOT MINIS-MINT GREEN ",
-            price: " Rs.699",
+            price:  699,
             rating: "4.9",
             category:"sugarmerchstation",
-            prodID:"8",
+            idtype: "face",
             img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-mint-green-minis-set-14792910340179.jpg?v=1620652722 "
         },
 
         {
             name: "SMUDGE ME NOT LIP DUOS ",
-            price: " Rs.599",
+            price: 599,
             rating: "4.5",
             category: "bestseller",
-            prodID:"9",
+            idtype: "face",
             img: " https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-lip-duo-01-brazen-raisin-burgundy-13200661643347.jpg?v=1619108721"
         },
         //
         {
             name: "ACE OF FACE FOUNDATION STICK",
-            price: " Rs.999",
+            price: 999,
             rating: "4.8",
             category:"makeupkits",
-            prodID:"10",
+            idtype: "combo",
             img: " https://cdn.shopify.com/s/files/1/0906/2558/products/1_529c20ee-c872-4029-9702-8580d7b9a66f.jpg?v=1640178644"
         },
 
         {
             name: "Gloss Boss 24HR Eyeliner - 01 Back In Black (Black)",
-            price: " Rs.499",
+            price: 499,
             rating: " :star:4.8",
-            category:"sugarmerchstation",
+            idtype: "eye",
             prodID:"11",
             img: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-gloss-boss-24hr-eyeliner-01-back-in-black-black-12771395436627_a805d7b4-0863-4ae0-9f15-a2292ae9aa93.jpg?v=1632210594 "
         },
@@ -138,8 +153,8 @@ let trendingdata =[
 
      name: "Blend Trend Face Brush - 003 Contour",
      category:"sugarmerchstation",
-     price:"Rs.399",
-     prodID:"12",
+     price:399,
+     idtype: "foundation",
      rating:"4.5(13)", 
     },
      {
@@ -147,49 +162,49 @@ let trendingdata =[
 
      name: "Blend Trend Face Brush - 006 highlighter",
      category:"makeupkits",
-     price:"Rs.399",
-     prodID:"13",
+     price:399,
+     idtype: "face",
      rating:"4.7(23)", 
     },
      {
         img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982",
         name:"blend trend eyeshadow brush -043 - round xl",
         category: "valueset",
-        price: "RS.399",
-        prodID:"14",
+        price: 399,
+        idtype: "foundation",
         rating:"4.8(6)",
     },
      {
         img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-3-min.jpg?v=1627573657",
         name:"blend trend eyeshadow brush -042 - round",
         category: "sugarset",
-        price: "Rs399",
-        prodID:"15",
+        price: 399,
+        idtype: "eye",
         rating:"4.4(5)",
     },
      {
         img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-13.jpg?v=1627659977",
         name:"Blend Trend Dual Eyeshadow Brush - 413 Flat + Round Xl",
         category: "sugarset",
-        price:"Rs599" ,
+        price:599 ,
         rating:"5(2)",
-        prodID:"16",
+        idtype: "combo",
     },
      {
         img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-2-min.jpg?v=1627573652",
         name:"Blend Trend Eyeshadow Brush - 041 Flat",
-        price: "RS.399",
+        price: 399,
         catagory: "valueset",
         rating:"5(3)",
-        prodID:"17",
+        idtype: "foundation",
     },
      {
         img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-5-min.jpg?v=1627573639",
         name:"Blend Trend Dual Eyeshadow Brush - 412 Flat + Round",
         catagory: "sugarset",
-        price:"Rs.599" ,
+        price: 599 ,
         rating:"5(2)",
-        prodID:"18",
+        idtype: "eye",
     },
     //
     {
@@ -197,31 +212,31 @@ let trendingdata =[
    
         name: "Blend Trend Foundation Brush - 052 kabuki",
         category: "bestseller",
-        price:"RS.399",
+        price:399,
         rating:"4.8(26)", 
-        prodID:"19",
+        idtype: "face",
        },
           {
         img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
    
         name: "Blend Trend Foundation Brush - 001 blush",
          category:"sugarmerchstation",
-        price:"Rs399",
+        price:399,
         rating:"4.9(15)",
-        prodID:"20", 
+        idtype: "eye",
        },
            {
         img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
    
         name: "Blend Trend Foundation Brush - 007 powder",
         category: "sugarset",
-        price:"Rs.399",
+        price:399,
         rating:"4.9(24)",
-        prodID:"21",
+        idtype: "combo",
         },
          {
                name: "MATTE AS HELL CRAYON LIPSTICK ",
-               price: " Rs.699",
+               price: 399,
                rating: "4.8",
                category:"sugarmerchstation", 
                prodID:"22",
@@ -231,15 +246,15 @@ let trendingdata =[
            img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982",
            name:"blend trend eyeshadow brush -043 - round xl",
            category: "bestseller",
-           price: "Rs.399",
+           price: 399,
            rating:"4.8(6)",
-           prodID:"23",
+           idtype: "face",
        },
         {
            img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-3-min.jpg?v=1627573657",
            name:"blend trend eyeshadow brush -042 - round",
            category: "bestseller", 
-           price:"Rs.399",
+           price:399,
            rating:"4.4(5)",
            prodID:"24",
        },
@@ -247,70 +262,70 @@ let trendingdata =[
            img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-13.jpg?v=1627659977",
            name:"Blend Trend Dual Eyeshadow Brush - 413 Flat + Round Xl",
            category:"makeupkits",
-           price:"Rs.599" ,
+           price:399 ,
            rating:"5(2)",
-           prodID:"25",
+           idtype: "combo",
        },
         {
            img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-2-min.jpg?v=1627573652",
            name:"Blend Trend Eyeshadow Brush - 041 Flat",
             category: "valueset",
-           price: "Rs.399",
+           price: 399,
            rating:"5(3)",
-           prodID:"26",
+           idtype: "face",
        },
         {
            img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-5-min.jpg?v=1627573639",
            name:"Blend Trend Dual Eyeshadow Brush - 412 Flat + Round",
            category: "bestseller",
-           price:"Rs.599" ,
+           price:599 ,
            rating:"5(2)",
-           prodID:"27",
+           idtype: "eye",
        },
     {
         img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-003Contour.jpg?v=1627659996",
    
         name: "Blend Trend Face Brush - 003 Contour",
          category: "valueset",
-        price:"Rs.399",
+        price:399,
         rating:"4.5(13)", 
-        prodID:"28",
+        idtype: "eye",
        },
         {
         img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002",
    
         name: "Blend Trend Face Brush - 006 highlighter",
         category: "bestseller",
-        price:"Rs.399",
+        price:399,
         rating:"4.7(23)", 
-        prodID:"29",
+        idtype: "combo",
        },
           {
         img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-052Kabuki.jpg?v=1627573664",
    
         name: "Blend Trend Foundation Brush - 052 kabuki",
         category:"makeupkits",
-        price:"Rs.399",
+        price:399,
         rating:"4.8(26)",
-        prodID:"30", 
+        idtype: "face", 
        },
           {
         img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
    
         name: "Blend Trend Foundation Brush - 001 blush",
         category: "bestseller",
-        price:"Rs.399",
+        price:399,
         rating:"4.9(15)",
-        prodID:"31",  
+        idtype: "eye", 
        },
            {
         img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
    
         name: "Blend Trend Foundation Brush - 007 powder",
         category:"makeupkits",
-        price:"RS.399",
+        price:399,
         rating:"4.9(24)", 
-        prodID:"32", 
+        idtype: "eye", 
        },
       
 
@@ -334,10 +349,10 @@ function displayItemCards(brushDataLS) {
     itemImg.src = ele.img;
 
     let itemName = document.createElement("h3");
-    itemName.innerText = ele.name;
+    itemName.innerText ="Rs"+ ele.name;
 
     let itemPrice = document.createElement("p");
-    itemPrice.innerText =  ele.price;
+    itemPrice.innerText = "Rs" + ele.price;
 
     let ratDiv = document.createElement("div");
 
