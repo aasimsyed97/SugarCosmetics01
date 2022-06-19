@@ -100,4 +100,5 @@ document.querySelector("#gotoHome").addEventListener("click", function () {
 document.getElementById("paylast").addEventListener("click", function () {
   let total = priceDisplayed.innerText;
   localStorage.setItem("totalPayment", total);
+  window.location.href = "../payment.html";
 });
