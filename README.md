@@ -1,7 +1,7 @@
 
 # Sugarcosmetic_clone
 
-This project is a team project of 5 members, This is an e-commerce website that sells cosmetic products. We built this cloning project
+This project is a team project of 6 members, This is an e-commerce website that sells cosmetic products. We built this cloning project
 Within 5 days and this is our first project during the Masai curriculum 
 
 
