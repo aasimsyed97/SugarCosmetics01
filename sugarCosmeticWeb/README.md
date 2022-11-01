@@ -1,16 +1,45 @@
-# SugarCosmetics01
 
-TEAM:- EAGLES
+# Sugarcosmetic_clone
 
-JAGATJIT BARIK [fw19_0711] Brushes pages with sub-catagory product pages,Cart , footer
-GOURAV LALA    [fp04_305]  Blogs pages and payment gateway.
-PRADEEP SINGH  [fw19_1049] Trending with all sub-catagory product under Trending.
-SUNNI KUMAR [fw19_0799] SkinCare with all sub-catagory product pages under SkinCare, Navbar.
-Sunny Lalwani  [fp04_424]  Landing Page with login/logout and Navbar.
-Aasim Syed     [fw19_0690] Makeup main with all sub-catagory product pages and wishlist page.
+This project is a team project of 6 members, This is an e-commerce website that sells cosmetic products. We built this cloning project
+Within 5 days and this is our first project during the Masai curriculum 
+https://startling-mooncake-efccdc.netlify.app/
 
-Note:-
-All product pages are equiped with add to wish list and add to cart functionality. 
-wishlist and cart page are capable to remove the items from respective pages. 
-cart have all mathematical functionality with promocode application. (team30 & team50).
-payment gateway is equiped to accept only card payment . 
+## Features
+
+- Login/signup
+- productAdding to wishlist
+- add cart
+- filtering
+- sorting
+- discount calculating
+- payment checkout
+
+
+
+## Installation
+
+- copy this https://github.com/aasimsyed97/SugarCosmetics01.git
+- Select path where you want to store the project in your pc
+- open the corresponding file / folder with editor
+- open terminal of your editor
+- use  --> git clone (paste link) <-- 
+- after project cloned to your folder
+- go to index.html inside homenavbar folder
+- open with live server
+    
+## Tech Stack
+
+* Javascript
+* HTML
+* CSS
+
+
+
+## Screenshots
+
+![App Screenshot](https://cdn.shopify.com/s/files/1/1301/1643/files/Weekend_offer-_landing_banner_2.jpg?v=1600581929)
+
+![App Screenshot](https://grocurv.com/media/images/Sugar_Website.width-800.png)
+
+![App Screenshot](https://www.couponmoto.com/storage/store/description/sugar-cosmetics-coupon-code.png)
